@@ -39,7 +39,6 @@
         height: 1080px;
         background-color: #111111;
         color: #FFFFFF;
-        /* overflow-x: hidden; */
     }
 
     .contactMe {
@@ -47,12 +46,25 @@
         left: 1662px;
         top: 30px;
         color: #FF0000;
-        /* text-decoration: line-through; */
         font-family: "SF-Pro-Ultralight";
         font-size: 45px;
         letter-spacing: -2px;
+        text-decoration: none;
+        transition: clip-path 275ms ease;
+    }
+
+    .contactMe:hover::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .contactMe::before {
+        position: absolute;
+        content: attr(alt);
+        color: #FFFFFF;
         text-decoration: line-through;
         text-decoration-thickness: 1px;
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: clip-path 275ms ease;
     }
 
     .imageLogo {
