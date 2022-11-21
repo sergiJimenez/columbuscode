@@ -1,6 +1,6 @@
 <template>
-    <div class="mainColumbusTitle">
-        <a href="#fastWay" class="contactMe" alt="Contact">Contact</a>
+    <div class="mainColumbusTitle" id="theBeggining">
+        <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
         <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
         <p class="scrollDown" alt="Scroll down">Scroll down</p>
         <div class="verticalLine"></div>
@@ -50,7 +50,7 @@
         font-size: 45px;
         letter-spacing: -2px;
         text-decoration: none;
-        transition: clip-path 275ms ease;
+        transition: clip-path 1000ms ease;
     }
 
     .contactMe:hover::before {
@@ -64,7 +64,7 @@
         text-decoration: line-through;
         text-decoration-thickness: 1px;
         clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-        transition: clip-path 275ms ease;
+        transition: clip-path 1000ms ease;
     }
 
     .imageLogo {
@@ -73,6 +73,11 @@
         height: 284px;
         top: 355px;
         left: 824px;
+        transition: transform 2.5s;
+    }
+
+    .imageLogo:hover {
+        transform: scale(1.5);
     }
 
     .scrollDown{

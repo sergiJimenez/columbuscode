@@ -130,17 +130,6 @@ export default {
         border: none;
         cursor: pointer; 
     }
-    
-    /* .modal-play-button {
-        position: absolute;
-        height: 30px;
-        width: 40px;
-        top: 730px;
-        right: 590px;
-        background: none;
-        border: none;
-        cursor: pointer; 
-    } */
 
     .modal-pause-button {
         position: absolute;
@@ -246,7 +235,6 @@ export default {
         height: 1080px;
         background-color: #111111;
         color: #FFFFFF;
-        /* overflow-x: hidden; */
     }
 
     .P {

@@ -1,6 +1,6 @@
 <template>
     <div class="contactMeLayout">
-        <p v-for="contactData in contactDatas" :key="contactData.titleAPI" class="contactMeText" id="fastWay" alt="Contact me">
+        <p v-for="contactData in contactDatas" :key="contactData.titleAPI" class="contactMeText" id="theEnd" alt="Contact me">
             {{ contactData.titleAPI }}
         </p>
         <input v-for="contactData in contactDatas" :key="contactData.nameAPI" class="firstNameBox" v-model="nameAPI" :placeholder="contactData.nameAPI" alt="First name"/>
@@ -17,7 +17,7 @@
             <a v-for="contactData in contactDatas" :key="contactData.designByAPI" :href="contactData.linkGitHubAPI" class="github"  target="_blank" alt="GitHub">GitHub</a>
         </div>
         <p v-for="contactData in contactDatas" :key="contactData.designByAPI" class="designContact" alt="Design by">
-            {{ contactData.designByAPI }}<b v-for="contactData in contactDatas" :key="contactData.byContactAPI" class="byContact" alt="Sergi Jiménez">{{ contactData.byContactAPI }}</b>
+            {{ contactData.designByAPI }}<a v-for="contactData in contactDatas" :key="contactData.byContactAPI" class="byContact" alt="Sergi Jiménez" href="#theBeggining">{{ contactData.byContactAPI }}</a>
         </p>
     </div>
 </template>
@@ -69,7 +69,6 @@
         left: 167px;
         top: 5461px;
         color: #111111;
-        /* text-decoration: line-through; */
         font-family: "SF-Pro-Ultralight";
         font-size: 45px;
         letter-spacing: -2px;
@@ -152,21 +151,47 @@
         left: 960px;
         color: #FF0000;
         cursor: pointer;
+        transition: clip-path 1000ms ease;
+    }
+
+    .sendButton:hover::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .sendButton::before {
+        position: absolute;
+        content: attr(alt);
+        color: #111111;
+        text-decoration: line-through;
+        text-decoration-thickness: 1px;
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: clip-path 1000ms ease;
     }
 
     .github {
         position: absolute;
         font-family: "SF-Pro-Ultralight";
+        color: #111111;
         font-size: 30px;
         letter-spacing: -2px;
         top: 6389px;
         left: 966px;
-        text-decoration: line-through;
-        text-decoration-thickness: 1px;
+        text-decoration: none;
+        transition: clip-path 1000ms ease;
     }
 
-    .github:hover {
-        color:#FF0000;
+    .github:hover::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .github::before {
+        position: absolute;
+        content: attr(alt);
+        color: #FF0000;
+        text-decoration: line-through;
+        text-decoration-thickness: 1px;
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: clip-path 1000ms ease;
     }
 
     .designContact {
@@ -180,7 +205,20 @@
 
     .byContact {
         color:#FF0000;
-        /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
         font-weight: normal;
+        text-decoration: none;
+        transition: clip-path 1000ms ease;
+    }
+
+    .byContact:hover::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .byContact::before {
+        position: absolute;
+        content: attr(alt);
+        color: #111111;
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: clip-path 1000ms ease;
     }
 </style>
