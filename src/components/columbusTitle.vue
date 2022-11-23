@@ -1,4 +1,5 @@
 <template>
+    <meta name="columbusTitle" content="width=device-width, initial-scale=1.0">
     <div class="mainColumbusTitle" id="theBeggining">
         <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
         <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
@@ -33,18 +34,15 @@
         font-weight: normal;
     }
 
-    .mainColumbusTitle{
-        display: flex;
-        width: 1920px;
-        height: 1080px;
-        background-color: #111111;
-        color: #FFFFFF;
+    .mainColumbusTitle {
+        width: 100%;
+        height: 100%;
     }
 
     .contactMe {
         position: absolute;
-        left: 1662px;
-        top: 30px;
+        width: 100%;
+        margin: 1.56% 0% 0% 86.58%;
         color: #FF0000;
         font-family: "SF-Pro-Ultralight";
         font-size: 45px;
@@ -71,8 +69,9 @@
         position: absolute;
         width: 284px;
         height: 284px;
-        top: 355px;
-        left: 824px;
+        margin: 20% 0% 0% 43%;
+        /* top: 355px; */
+        /* left: 824px; */
         transition: transform 2.5s;
     }
 
@@ -82,6 +81,8 @@
 
     .scrollDown{
         position: absolute;
+        color: #FFFFFF;
+        /* width: 100%; */
         left: 850px;
         top: 703px;
         font-family: "SF-Pro-Ultralight";
@@ -117,4 +118,13 @@
             bottom: 214px;
         }
     }
+
+    /* iPhone 12 Pro Dimensions */
+    /* @media only screen and (min-width: 390px) {
+        .mainColumbusTitle {
+            width: 100%;
+            height: 100%;
+            background-color: #111111;
+        }
+    } */
 </style>
