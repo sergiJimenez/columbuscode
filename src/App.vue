@@ -1,6 +1,6 @@
 <template>
     <section><columbusTitle/></section>
-    <!-- <section><esloganLayout/></section> -->
+    <section><esloganLayout/></section>
     <!-- <section><whoamiLayout/></section> -->
     <!-- <section><skillsLayout/></section> -->
     <!-- <section><projectsLayout/></section> -->
@@ -43,7 +43,7 @@ export default {
   } */
 
   ::-webkit-scrollbar {
-    width: 0px;
+    width: 0%;
     background: transparent;
   }
 </style>
