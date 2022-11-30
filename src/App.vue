@@ -1,30 +1,30 @@
 <template>
-    <section><columbusTitle/></section>
-    <section><esloganLayout/></section>
+    <!-- <section><columbusTitle/></section> -->
+    <!-- <section><esloganLayout/></section> -->
     <!-- <section><whoamiLayout/></section> -->
     <!-- <section><skillsLayout/></section> -->
     <!-- <section><projectsLayout/></section> -->
-    <!-- <section><contactMeLayout/></section> -->
+    <section><contactMeLayout/></section>
 </template>
 
 <script>
-import columbusTitle from './components/columbusTitle.vue'
+// import columbusTitle from './components/columbusTitle.vue'
 // import esloganLayout from './components/esloganLayout.vue'
 // import whoamiLayout from './components/whoamiLayout.vue'
 // import skillsLayout from './components/skillsLayout.vue'
 // import projectsLayout from './components/projectsLayout.vue'
-// import contactMeLayout from './components/contactMeLayout.vue'
+import contactMeLayout from './components/contactMeLayout.vue'
 
 export default {
   el: '#App',
   name: 'App',
   components: {
-    columbusTitle,
+    // columbusTitle,
     // esloganLayout,
     // whoamiLayout,
     // skillsLayout,
     // projectsLayout,
-    // contactMeLayout
+    contactMeLayout
   }
 }
 </script>
@@ -32,7 +32,7 @@ export default {
 <style>
   html{
     scroll-behavior: smooth;
-    background-color: #111111;
+    /* background-color: #111111; */
   }
   
   /* .main {

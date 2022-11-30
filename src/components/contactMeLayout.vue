@@ -3,16 +3,19 @@
         <p v-for="contactData in contactDatas" :key="contactData.titleAPI" class="contactMeText" id="theEnd" alt="Contact me">
             {{ contactData.titleAPI }}
         </p>
-        <input v-for="contactData in contactDatas" :key="contactData.nameAPI" class="firstNameBox" v-model="nameAPI" :placeholder="contactData.nameAPI" alt="First name"/>
-        <input v-for="contactData in contactDatas" :key="contactData.secondNameAPI" class="secondNameBox" v-model="secondNameAPI" :placeholder="contactData.secondNameAPI" alt="Second name"/>
-        <input v-for="contactData in contactDatas" :key="contactData.emailAPI" class="emailBox" v-model="emailAPI" :placeholder="contactData.emailAPI" alt="E-mail"/>
-        <input v-for="contactData in contactDatas" :key="contactData.explainAPI" class="explainBox" v-model="explainAPI" :placeholder="contactData.explainAPI" alt="Explain me about your dreams..."/>
+        <form action="https://formsubmit.co/acasualcolumbus@gmail.com" method="POST">
+            <input v-for="contactData in contactDatas" :key="contactData.nameAPI" class="firstNameBox" v-model="nameAPI" :placeholder="contactData.nameAPI" alt="First name" type="text" name="name" required/>
+            <input v-for="contactData in contactDatas" :key="contactData.secondNameAPI" class="secondNameBox" v-model="secondNameAPI" :placeholder="contactData.secondNameAPI" alt="Second name"/>
+            <input v-for="contactData in contactDatas" :key="contactData.emailAPI" class="emailBox" v-model="emailAPI" :placeholder="contactData.emailAPI" alt="E-mail" type="text" name="email" required/>
+            <input v-for="contactData in contactDatas" :key="contactData.explainAPI" class="explainBox" v-model="explainAPI" :placeholder="contactData.explainAPI" alt="Explain me about your dreams..." type="text" name="message" required/>
+            <button v-for="contactData in contactDatas" :key="contactData.sendButtonAPI" class="sendButton" alt="Send" type="submit">
+                {{ contactData.sendButtonAPI }}
+            </button>
+            <!-- This is a "Thank You page that we have to programming after. "<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"/> -->
+        </form>
         <div v-for="contactData in contactDatas" :key="contactData.locationAPI" class="gettingTime" alt="Barcelona, España">
             {{ contactData.locationAPI }}<b class="hourLocal">{{ timestamp }}</b>
         </div>
-        <p v-for="contactData in contactDatas" :key="contactData.sendButtonAPI" class="sendButton" alt="Send">
-            {{ contactData.sendButtonAPI }}
-        </p>
         <div>
             <a v-for="contactData in contactDatas" :key="contactData.designByAPI" :href="contactData.linkGitHubAPI" class="github"  target="_blank" alt="GitHub">GitHub</a>
         </div>
@@ -151,6 +154,8 @@
         left: 960px;
         color: #FF0000;
         cursor: pointer;
+        border: none;
+        background-color: transparent;
         transition: clip-path 1000ms ease;
     }
 

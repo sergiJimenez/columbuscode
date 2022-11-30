@@ -1,10 +1,10 @@
 [
     {
         "titleAPI": "Contact me",
-        "nameAPI": "First name",
+        "nameAPI": "First name*",
         "secondNameAPI": "Second name",
-        "emailAPI": "E-mail",
-        "explainAPI": "Explain me about your dreams...",
+        "emailAPI": "E-mail*",
+        "explainAPI": "Explain me about your dreams...*",
         "locationAPI": "Barcelona, ES",
         "sendButtonAPI": "Send",
         "linkGitHubAPI": "https://github.com/sergiJimenez/columbuscode",
