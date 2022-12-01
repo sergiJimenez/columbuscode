@@ -1,7 +1,7 @@
 [
     {
         "titleAPI": "Contact me",
-        "nameAPI": "First name*",
+        "nameAPI": "Name*",
         "secondNameAPI": "Second name",
         "emailAPI": "E-mail*",
         "explainAPI": "Explain me about your dreams...*",

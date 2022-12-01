@@ -3,12 +3,12 @@
         <p v-for="contactData in contactDatas" :key="contactData.titleAPI" class="contactMeText" id="theEnd" alt="Contact me">
             {{ contactData.titleAPI }}
         </p>
+        <!-- Submit form by FORMSUBMIT -->
         <form action="https://formsubmit.co/acasualcolumbus@gmail.com" method="POST">
-            <input v-for="contactData in contactDatas" :key="contactData.nameAPI" class="firstNameBox" v-model="nameAPI" :placeholder="contactData.nameAPI" alt="First name" type="text" name="name" required/>
-            <input v-for="contactData in contactDatas" :key="contactData.secondNameAPI" class="secondNameBox" v-model="secondNameAPI" :placeholder="contactData.secondNameAPI" alt="Second name"/>
-            <input v-for="contactData in contactDatas" :key="contactData.emailAPI" class="emailBox" v-model="emailAPI" :placeholder="contactData.emailAPI" alt="E-mail" type="text" name="email" required/>
-            <input v-for="contactData in contactDatas" :key="contactData.explainAPI" class="explainBox" v-model="explainAPI" :placeholder="contactData.explainAPI" alt="Explain me about your dreams..." type="text" name="message" required/>
-            <button v-for="contactData in contactDatas" :key="contactData.sendButtonAPI" class="sendButton" alt="Send" type="submit">
+            <!-- Name --> <input v-for="contactData in contactDatas" :key="contactData.nameAPI" class="firstNameBox" v-model="nameAPI" :placeholder="contactData.nameAPI" alt="First name" type="text" name="name" required/>
+            <!-- Email --> <input v-for="contactData in contactDatas" :key="contactData.emailAPI" class="emailBox" v-model="emailAPI" :placeholder="contactData.emailAPI" alt="E-mail" type="text" name="email" required/>
+            <!-- Explaining --> <input v-for="contactData in contactDatas" :key="contactData.explainAPI" class="explainBox" v-model="explainAPI" :placeholder="contactData.explainAPI" alt="Explain me about your dreams..." type="text" name="message" required/>
+            <!-- Submit Button --> <button v-for="contactData in contactDatas" :key="contactData.sendButtonAPI" class="sendButton" alt="Send" type="submit">
                 {{ contactData.sendButtonAPI }}
             </button>
             <!-- This is a "Thank You page that we have to programming after. "<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"/> -->
@@ -60,10 +60,15 @@
         font-style: normal;
         font-weight: normal;
     }
-    .contactMeLayout {
+    /* .contactMeLayout {
         display: flex;
         width: 1920px;
         height: 1080px;
+        background-color: #FFFFFF;
+    } */
+    .contactMeLayout {
+        width: 100%;
+        height: 100%;
         background-color: #FFFFFF;
     }
 
@@ -129,6 +134,7 @@
         left: 167px;
         border: 0;
         outline: 0;
+        resize: none;
     }
 
     .gettingTime {
