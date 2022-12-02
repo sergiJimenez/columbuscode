@@ -2,8 +2,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="mainColumbusTitle" id="theBeggining">
         <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
-        <!-- <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
-        <p class="scrollDown" alt="Scroll down">Scroll down</p>
+        <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
+        <!-- <p class="scrollDown" alt="Scroll down">Scroll down</p>
         <div class="verticalLine"></div>
         <div class="circle"></div> -->
     </div>
@@ -109,6 +109,7 @@
         animation: moveDown 6s ease-in-out alternate infinite;
     }
 
+    /*Circle animation*/
     @keyframes moveDown { /* 72px of movement */
         0%, 100% {
             bottom: 152px;
@@ -136,7 +137,7 @@
         }
     }
 
-    /*Since 427px to 768px*/
+    /*Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
         .contactMe {
             margin-top: 1.5%;
@@ -145,12 +146,21 @@
         }
     }
 
-    /*Since 1024px to 1440px*/
-    @media (min-width: 1024px) and (max-width: 1440px) {
+    /*Since 1025px to 1440px*/
+    @media (min-width: 1025px) and (max-width: 1440px) {
         .contactMe {
-            margin-top: 1.5%;
-            margin-left: 82%;
-            font-size: 3.85vw;
+            margin-top: 1.56%;
+            margin-left: 86.58%;
+            font-size: 2.85vw;
+        }
+    }
+
+    /*Since 1441px to 2560px*/
+    @media (min-width: 1441px) and (max-width: 2560px) {
+        .contactMe {
+            margin-top: 1.56%;
+            margin-left: 86.58%;
+            font-size: 2.35vw;
         }
     }
 </style>
