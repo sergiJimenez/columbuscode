@@ -181,12 +181,14 @@
     @media (min-width: 280px) and (max-width: 376px) {
         .imageLogo {
             width: 72.6%;
+            margin-top: -32%;
         }
     }
 
     @media (min-width: 376px) and (max-width: 426px) {
         .imageLogo {
             width: 72.6%;
+            margin-top: -32%;
         }
     }
 </style>
