@@ -1,11 +1,17 @@
 <template>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="mainColumbusTitle" id="theBeggining">
-        <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
-        <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
-        <!-- <p class="scrollDown" alt="Scroll down">Scroll down</p>
-        <div class="verticalLine"></div>
-        <div class="circle"></div> -->
+        <div class="divContact">
+            <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
+        </div>
+        <div class="divImage">
+            <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
+        </div>
+        <div class="divAnimation">
+            <!-- <p class="scrollDown" alt="Scroll down">Scroll down</p>
+            <div class="verticalLine"></div>
+            <div class="circle"></div> -->
+        </div>
     </div>
 </template>
 
@@ -40,10 +46,15 @@
         background-color: #111111;
     }
 
-    .contactMe {
-        position: absolute;
+    .divContact {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
         margin-top: 1.56%;
-        margin-left: 86.58%;
+        margin-right: 4.44%;
+    }
+
+    .contactMe {
         color: #FF0000;
         font-family: "SF-Pro-Ultralight";
         font-size: 2.35vw;
@@ -62,15 +73,20 @@
         color: #FFFFFF;
         text-decoration: line-through;
         text-decoration-thickness: 1px;
+        letter-spacing: -2px;
         clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
         transition: clip-path 1000ms ease;
     }
 
+    .divImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
     .imageLogo {
         width: 14.8%;
-        height: 14.8%;
-        margin-top: 18%;
-        margin-left: 42.5%;
         transition: transform 2.5s;
     }
 
@@ -119,11 +135,15 @@
         }
     }
 
+    /*Contact Me conditions*/
     /*Since 280px to 426px*/
     @media (min-width: 280px) and (max-width: 426px) {
+        .divContact{
+            margin-top: 5.56%;
+            justify-content: center;
+        }
+        
         .contactMe {
-            margin-top: 5%;
-            margin-left: 33%;
             font-size: 10.35vw;
         }
     }
@@ -131,8 +151,6 @@
     /*Since 427px to 768px*/
     @media (min-width: 427px) and (max-width: 768px) {
         .contactMe {
-            margin-top: 2.5%;
-            margin-left: 76%;
             font-size: 5.35vw;
         }
     }
@@ -140,8 +158,6 @@
     /*Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
         .contactMe {
-            margin-top: 1.5%;
-            margin-left: 82%;
             font-size: 3.85vw;
         }
     }
@@ -149,8 +165,6 @@
     /*Since 1025px to 1440px*/
     @media (min-width: 1025px) and (max-width: 1440px) {
         .contactMe {
-            margin-top: 1.56%;
-            margin-left: 86.58%;
             font-size: 2.85vw;
         }
     }
@@ -158,9 +172,21 @@
     /*Since 1441px to 2560px*/
     @media (min-width: 1441px) and (max-width: 2560px) {
         .contactMe {
-            margin-top: 1.56%;
-            margin-left: 86.58%;
             font-size: 2.35vw;
+        }
+    }
+
+    /*Logo conditions*/
+    /*Since 280px to 374px*/
+    @media (min-width: 280px) and (max-width: 376px) {
+        .imageLogo {
+            width: 72.6%;
+        }
+    }
+
+    @media (min-width: 376px) and (max-width: 426px) {
+        .imageLogo {
+            width: 72.6%;
         }
     }
 </style>
