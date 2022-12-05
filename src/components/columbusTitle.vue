@@ -81,7 +81,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 75vh;
     }
 
     .imageLogo {
@@ -134,7 +134,7 @@
         }
     }
 
-    /*Contact Me conditions*/
+    /*Responsive conditions*/
     /*Since 280px to 426px*/
     @media (min-width: 280px) and (max-width: 426px) {
         .divContact{
@@ -144,6 +144,10 @@
         
         .contactMe {
             font-size: 10.35vw;
+        }
+
+        .imageLogo {
+            width: 72.6%;
         }
     }
 
@@ -156,6 +160,10 @@
         .contactMe {
             font-size: 5.35vw;
         }
+
+        .imageLogo {
+            width: 52.6%;
+        }
     }
 
     /*Since 769px to 1024px*/
@@ -166,6 +174,10 @@
         
         .contactMe {
             font-size: 3.85vw;
+        }
+
+        .imageLogo {
+            width: 32.6%;
         }
     }
 
@@ -178,6 +190,10 @@
         .contactMe {
             font-size: 2.85vw;
         }
+
+        .imageLogo {
+            width: 22.6%;
+        }
     }
 
     /*Since 1441px to 2560px*/
@@ -189,23 +205,9 @@
         .contactMe {
             font-size: 2.35vw;
         }
-    }
-    /*Contact Me conditions*/
 
-    /*Logo conditions*/
-    /*Since 280px to 374px*/
-    @media (min-width: 280px) and (max-width: 376px) {
         .imageLogo {
-            width: 72.6%;
-            margin-top: -34%;
+            width: 17.6%;
         }
     }
-
-    @media (min-width: 376px) and (max-width: 426px) {
-        .imageLogo {
-            width: 72.6%;
-            margin-top: -34%;
-        }
-    }
-    /*Logo conditions*/
 </style>
