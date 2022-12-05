@@ -7,11 +7,13 @@
         <div class="divImage">
             <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
         </div>
-        <!-- <div class="divAnimation"> -->
-            <!-- <p class="scrollDown" alt="Scroll down">Scroll down</p>
-            <div class="verticalLine"></div>
-            <div class="circle"></div> -->
-        <!-- </div> -->
+        <div class="divAnimation">
+            <p class="scrollDown" alt="Scroll down">Scroll down</p>
+            <div class="lineCircleDiv">
+                <div class="verticalLine" alt="Vertical line"></div>
+                <!-- <div class="circle" alt="Circle"></div> -->
+            </div>
+        </div>
     </div>
 </template>
 
@@ -19,6 +21,7 @@
 </script>
 
 <style scoped>
+    /*Font families*/
     @font-face {
         font-family: 'Adamas';
         src: local('Adamas'), url('../fonts/Adamas-Regular.otf') format('opentype');
@@ -40,6 +43,7 @@
         font-weight: normal;
     }
 
+    /*Main conditions to the maximum resolution*/
     .mainColumbusTitle {
         width: 100%;
         height: 100%;
@@ -50,7 +54,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-top: 1.56%;
+        margin-top: 2.56%;
     }
 
     .contactMe {
@@ -93,39 +97,45 @@
         transform: scale(1.5);
     }
 
+    .divAnimation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -5%;
+    }
+
     .scrollDown{
-        position: absolute;
         color: #FFFFFF;
-        /* width: 100%; */
-        left: 850px;
-        top: 703px;
         font-family: "SF-Pro-Ultralight";
-        font-size: 45px;
+        font-size: 2.35vw;
         letter-spacing: -2px;
     }
 
-    .verticalLine{  
-        position: absolute;
+    .lineCircleDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .verticalLine {  
         width: 2px;
-        height:76px;
-        left: 960px;
-        bottom: 153px;
+        height: 76px;
         background-color: #FFFFFF;
     }
 
-    .circle{
+    .circle {
         position: absolute;
-        width:16px;
-        height:16px;
-        left: 953px;
-        bottom: 152px;
-        background:#FFFFFF;
-        border-radius:50px;
+        background: #FFFFFF;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
         animation: moveDown 6s ease-in-out alternate infinite;
     }
 
     /*Circle animation*/
-    @keyframes moveDown { /* 72px of movement */
+    /*62px of movement*/
+    @keyframes moveDown {
         0%, 100% {
             bottom: 152px;
         }
@@ -135,7 +145,7 @@
     }
 
     /*Responsive conditions*/
-    /*Since 280px to 426px*/
+    /*Mobiles sizes S, M and L. Since 280px to 426px*/
     @media (min-width: 280px) and (max-width: 426px) {
         .divContact{
             margin-top: 5.56%;
@@ -149,9 +159,17 @@
         .imageLogo {
             width: 72.6%;
         }
+
+        .divAnimation {
+            margin-top: -35%;
+        }
+
+        .scrollDown {
+            font-size: 10.35vw;
+        }
     }
 
-    /*Since 427px to 768px*/
+    /*Standard tablet's. Since 427px to 768px*/
     @media (min-width: 427px) and (max-width: 768px) {
         .divContact {
             margin-right: 3.44%;
@@ -164,9 +182,17 @@
         .imageLogo {
             width: 52.6%;
         }
+
+        .divAnimation {
+            margin-top: -15%;
+        }
+
+        .scrollDown {
+            font-size: 5.35vw;
+        }
     }
 
-    /*Since 769px to 1024px*/
+    /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
         .divContact {
             margin-right: 3.44%;
@@ -177,11 +203,19 @@
         }
 
         .imageLogo {
-            width: 32.6%;
+            width: 42.6%;
+        }
+
+        .divAnimation {
+            margin-top: -5%;
+        }
+
+        .scrollDown {
+            font-size: 3.85vw;
         }
     }
 
-    /*Since 1025px to 1440px*/
+    /*Standard laptop's/screen's. Since 1025px to 1440px*/
     @media (min-width: 1025px) and (max-width: 1440px) {
         .divContact {
             margin-right: 3.44%;
@@ -192,7 +226,11 @@
         }
 
         .imageLogo {
-            width: 22.6%;
+            width: 27.6%;
+        }
+
+        .scrollDown {
+            font-size: 2.85vw;
         }
     }
 
@@ -201,13 +239,9 @@
         .divContact {
             margin-right: 3.44%;
         }
-        
-        .contactMe {
-            font-size: 2.35vw;
-        }
 
-        .imageLogo {
-            width: 17.6%;
+        .divAnimation {
+            margin-top: -8%;
         }
     }
 </style>
