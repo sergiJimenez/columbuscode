@@ -134,13 +134,12 @@
     }
 
     /*Circle animation*/
-    /*62px of movement*/
     @keyframes moveDown {
         0%, 100% {
-            bottom: 152px;
+            bottom: 8%;
         }
         50% {
-            bottom: 214px;
+            bottom: 15%;
         }
     }
 
@@ -166,6 +165,16 @@
 
         .scrollDown {
             font-size: 10.35vw;
+        }
+
+        /*Responsive circle animation*/
+        @keyframes moveDown {
+            0%, 100% {
+                bottom: 4vw;
+            }
+            50% {
+                bottom: 25vw;
+            }
         }
     }
 
