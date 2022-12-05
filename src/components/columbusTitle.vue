@@ -4,14 +4,14 @@
         <div class="divContact">
             <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
         </div>
-        <!-- <div class="divImage">
+        <div class="divImage">
             <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
-        </div> -->
-        <div class="divAnimation">
+        </div>
+        <!-- <div class="divAnimation"> -->
             <!-- <p class="scrollDown" alt="Scroll down">Scroll down</p>
             <div class="verticalLine"></div>
             <div class="circle"></div> -->
-        </div>
+        <!-- </div> -->
     </div>
 </template>
 
@@ -51,7 +51,6 @@
         align-items: center;
         justify-content: flex-end;
         margin-top: 1.56%;
-        margin-right: 4.44%;
     }
 
     .contactMe {
@@ -79,12 +78,10 @@
     }
 
     .divImage {
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        height: auto;
     }
 
     .imageLogo {
@@ -152,6 +149,10 @@
 
     /*Since 427px to 768px*/
     @media (min-width: 427px) and (max-width: 768px) {
+        .divContact {
+            margin-right: 3.44%;
+        }
+        
         .contactMe {
             font-size: 5.35vw;
         }
@@ -159,6 +160,10 @@
 
     /*Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
+        .divContact {
+            margin-right: 3.44%;
+        }
+        
         .contactMe {
             font-size: 3.85vw;
         }
@@ -166,6 +171,10 @@
 
     /*Since 1025px to 1440px*/
     @media (min-width: 1025px) and (max-width: 1440px) {
+        .divContact {
+            margin-right: 3.44%;
+        }
+        
         .contactMe {
             font-size: 2.85vw;
         }
@@ -173,10 +182,15 @@
 
     /*Since 1441px to 2560px*/
     @media (min-width: 1441px) and (max-width: 2560px) {
+        .divContact {
+            margin-right: 3.44%;
+        }
+        
         .contactMe {
             font-size: 2.35vw;
         }
     }
+    /*Contact Me conditions*/
 
     /*Logo conditions*/
     /*Since 280px to 374px*/
@@ -193,4 +207,5 @@
             margin-top: -34%;
         }
     }
+    /*Logo conditions*/
 </style>
