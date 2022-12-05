@@ -4,9 +4,9 @@
         <div class="divContact">
             <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
         </div>
-        <div class="divImage">
+        <!-- <div class="divImage">
             <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
-        </div>
+        </div> -->
         <div class="divAnimation">
             <!-- <p class="scrollDown" alt="Scroll down">Scroll down</p>
             <div class="verticalLine"></div>
@@ -79,10 +79,12 @@
     }
 
     .divImage {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+        height: auto;
     }
 
     .imageLogo {
@@ -181,14 +183,14 @@
     @media (min-width: 280px) and (max-width: 376px) {
         .imageLogo {
             width: 72.6%;
-            margin-top: -32%;
+            margin-top: -34%;
         }
     }
 
     @media (min-width: 376px) and (max-width: 426px) {
         .imageLogo {
             width: 72.6%;
-            margin-top: -32%;
+            margin-top: -34%;
         }
     }
 </style>
