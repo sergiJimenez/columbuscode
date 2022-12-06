@@ -1,4 +1,5 @@
 <template>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="contactMeLayout">
         <p v-for="contactData in contactDatas" :key="contactData.titleAPI" class="contactMeText" id="theEnd" alt="Contact me">
             {{ contactData.titleAPI }}
@@ -17,7 +18,7 @@
             {{ contactData.locationAPI }}<b class="hourLocal">{{ timestamp }}</b>
         </div>
         <div>
-            <a v-for="contactData in contactDatas" :key="contactData.designByAPI" :href="contactData.linkGitHubAPI" class="github"  target="_blank" alt="GitHub">GitHub</a>
+            <a v-for="contactData in contactDatas" :key="contactData.designByAPI" :href="contactData.linkGitHubAPI" class="github" target="_blank" alt="GitHub">GitHub</a>
         </div>
         <p v-for="contactData in contactDatas" :key="contactData.designByAPI" class="designContact" alt="Design by">
             {{ contactData.designByAPI }}<a v-for="contactData in contactDatas" :key="contactData.byContactAPI" class="byContact" alt="Sergi Jiménez" href="#theBeggining">{{ contactData.byContactAPI }}</a>
@@ -60,15 +61,11 @@
         font-style: normal;
         font-weight: normal;
     }
-    /* .contactMeLayout {
-        display: flex;
-        width: 1920px;
-        height: 1080px;
-        background-color: #FFFFFF;
-    } */
+    
+    /*Main conditions to the maximum resolution*/
     .contactMeLayout {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         background-color: #FFFFFF;
     }
 
