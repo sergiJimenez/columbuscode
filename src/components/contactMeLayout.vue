@@ -70,9 +70,9 @@
     }
 
     .contactMeText {
-        position: absolute;
-        left: 167px;
-        top: 5461px;
+        /* position: absolute; */
+        /* left: 167px; */
+        /* top: 5461px; */
         color: #111111;
         font-family: "SF-Pro-Ultralight";
         font-size: 45px;
@@ -82,79 +82,79 @@
     }
 
     .firstNameBox {
-        position: absolute;
+        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
         font-size: 45px;
         letter-spacing: -2px;
         width: 1564px;
         height: 72;
-        top: 5648px;
-        left: 167px;
+        /* top: 5648px; */
+        /* left: 167px; */
         border: 0;
         outline: 0;
     }
 
     .secondNameBox {
-        position: absolute;
+        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
         font-size: 45px;
         letter-spacing: -2px;
         width: 1564px;
         height: 72;
-        top: 5756px;
-        left: 167px;
+        /* top: 5756px; */
+        /* left: 167px; */
         border: 0;
         outline: 0;
     }
 
     .emailBox {
-        position: absolute;
+        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
         font-size: 45px;
         letter-spacing: -2px;
         width: 1564px;
         height: 72;
-        top: 5864px;
-        left: 167px;
+        /* top: 5864px; */
+        /* left: 167px; */
         border: 0;
         outline: 0;
     }
 
     .explainBox {
-        position: absolute;
+        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
         font-size: 45px;
         letter-spacing: -2px;
         width: 1564px;
         height: 72;
-        top: 5974px;
-        left: 167px;
+        /* top: 5974px; */
+        /* left: 167px; */
         border: 0;
         outline: 0;
         resize: none;
     }
 
     .gettingTime {
-        position: absolute;
+        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
         font-size: 30px;
         letter-spacing: -2px;
-        top: 6389px;
-        left: 78px;
+        /* top: 6389px; */
+        /* left: 78px; */
     }
 
     .hourLocal {
-        margin-left: 111px;
+        /* margin-left: 111px; */
         font-weight: normal;
     }
 
     .sendButton{
-        position: absolute;
+        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
         font-size: 45px;
         letter-spacing: -2px;
-        top: 6139px;
-        left: 960px;
+        /* top: 6139px; */
+        /* left: 960px; */
         color: #FF0000;
         cursor: pointer;
         border: none;
@@ -177,13 +177,13 @@
     }
 
     .github {
-        position: absolute;
+        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
         color: #111111;
         font-size: 30px;
         letter-spacing: -2px;
-        top: 6389px;
-        left: 966px;
+        /* top: 6389px; */
+        /* left: 966px; */
         text-decoration: none;
         transition: clip-path 1000ms ease;
     }
@@ -207,8 +207,8 @@
         font-family: "SF-Pro-Ultralight";
         font-size: 30px;
         letter-spacing: -2px;
-        top: 6359px;
-        left: 1543px;
+        /* top: 6359px; */
+        /* left: 1543px; */
     }
 
     .byContact {
