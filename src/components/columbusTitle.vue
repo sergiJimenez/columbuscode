@@ -54,7 +54,6 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-top: 2.56%;
     }
 
     .contactMe {
@@ -64,6 +63,7 @@
         letter-spacing: -2px;
         text-decoration: none;
         transition: clip-path 1000ms ease;
+        margin-top: 2.56%;
     }
 
     .contactMe:hover::before {
@@ -102,7 +102,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: -5%;
     }
 
     .scrollDown{
@@ -134,24 +133,24 @@
     }
 
     /*Circle animation*/
-    @keyframes moveDown {
+    /* @keyframes moveDown {
         0%, 100% {
             bottom: 8%;
         }
         50% {
             bottom: 15%;
         }
-    }
+    } */
 
     /*Responsive conditions*/
     /*Mobiles sizes S, M and L. Since 280px to 426px*/
     @media (min-width: 280px) and (max-width: 426px) {
         .divContact{
-            margin-top: 5.56%;
             justify-content: center;
         }
         
         .contactMe {
+            margin-top: 5.56%;
             font-size: 10.35vw;
         }
 
@@ -168,14 +167,14 @@
         }
 
         /*Responsive circle animation*/
-        @keyframes moveDown {
+        /* @keyframes moveDown {
             0%, 100% {
                 bottom: 4vw;
             }
             50% {
                 bottom: 25vw;
             }
-        }
+        } */
     }
 
     /*Standard tablet's. Since 427px to 768px*/
@@ -236,6 +235,10 @@
 
         .imageLogo {
             width: 27.6%;
+        }
+
+        .divAnimation {
+            margin-top: -5%;
         }
 
         .scrollDown {

@@ -1,28 +1,26 @@
 <template>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="contactMeLayout">
-        <p v-for="contactData in contactDatas" :key="contactData.titleAPI" class="contactMeText" id="theEnd" alt="Contact me">
-            {{ contactData.titleAPI }}
-        </p>
+        <div class="titleDiv">
+            <div v-for="contactData in contactDatas" :key="contactData.titleAPI" class="contactMeText" id="theEnd" alt="Contact me">
+                {{ contactData.titleAPI }}
+            </div>
+        </div>
         <!-- Submit form by FORMSUBMIT -->
-        <form action="https://formsubmit.co/acasualcolumbus@gmail.com" method="POST">
+        <form class="formDiv" action="https://formsubmit.co/acasualcolumbus@gmail.com" method="POST">
             <!-- Name --> <input v-for="contactData in contactDatas" :key="contactData.nameAPI" class="firstNameBox" v-model="nameAPI" :placeholder="contactData.nameAPI" alt="First name" type="text" name="name" required/>
             <!-- Email --> <input v-for="contactData in contactDatas" :key="contactData.emailAPI" class="emailBox" v-model="emailAPI" :placeholder="contactData.emailAPI" alt="E-mail" type="text" name="email" required/>
-            <!-- Explaining --> <input v-for="contactData in contactDatas" :key="contactData.explainAPI" class="explainBox" v-model="explainAPI" :placeholder="contactData.explainAPI" alt="Explain me about your dreams..." type="text" name="message" required/>
-            <!-- Submit Button --> <button v-for="contactData in contactDatas" :key="contactData.sendButtonAPI" class="sendButton" alt="Send" type="submit">
+            <!-- Explaining --> <textarea v-for="contactData in contactDatas" :key="contactData.explainAPI" class="explainBox" v-model="explainAPI" :placeholder="contactData.explainAPI" alt="Explain me about your dreams..." type="textarea" rows="4" name="message" required></textarea>
+            <!-- Submit Button --> <div><button v-for="contactData in contactDatas" :key="contactData.sendButtonAPI" class="sendButton" alt="Send" type="submit">
                 {{ contactData.sendButtonAPI }}
-            </button>
+            </button></div> <!-- Let this <div> alone because the <p> has an error with padding and margin's -->
             <!-- This is a "Thank You page that we have to programming after. "<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"/> -->
         </form>
-        <div v-for="contactData in contactDatas" :key="contactData.locationAPI" class="gettingTime" alt="Barcelona, España">
-            {{ contactData.locationAPI }}<b class="hourLocal">{{ timestamp }}</b>
-        </div>
-        <div>
+        <div class="bottomDiv">
+            <div v-for="contactData in contactDatas" :key="contactData.locationAPI" class="gettingTime" alt="Barcelona, España">{{ contactData.locationAPI }}<b class="hourLocal">{{ timestamp }}</b></div>
             <a v-for="contactData in contactDatas" :key="contactData.designByAPI" :href="contactData.linkGitHubAPI" class="github" target="_blank" alt="GitHub">GitHub</a>
+            <div v-for="contactData in contactDatas" :key="contactData.designByAPI" class="designContact" alt="Design by">{{ contactData.designByAPI }}<a v-for="contactData in contactDatas" :key="contactData.byContactAPI" class="byContact" alt="Sergi Jiménez" href="#theBeggining">{{ contactData.byContactAPI }}</a></div>
         </div>
-        <p v-for="contactData in contactDatas" :key="contactData.designByAPI" class="designContact" alt="Design by">
-            {{ contactData.designByAPI }}<a v-for="contactData in contactDatas" :key="contactData.byContactAPI" class="byContact" alt="Sergi Jiménez" href="#theBeggining">{{ contactData.byContactAPI }}</a>
-        </p>
     </div>
 </template>
 
@@ -69,92 +67,60 @@
         background-color: #FFFFFF;
     }
 
+    .titleDiv {
+        display: flex;
+        margin-left: 10%; /*This goes to @media when its created*/
+    }
+
     .contactMeText {
-        /* position: absolute; */
-        /* left: 167px; */
-        /* top: 5461px; */
         color: #111111;
         font-family: "SF-Pro-Ultralight";
-        font-size: 45px;
+        font-size: 2.35vw;
         letter-spacing: -2px;
         text-decoration: line-through;
         text-decoration-thickness: 1px;
+        margin-top: 5%; /*This goes to @media when its created*/
+    }
+
+    .formDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        width: 75%;
+        margin-top: 5%; /*This goes to @media when its created*/
+        margin-left: 10%; /*¿¿¿¿¿This goes to @media when its created?????*/
+        height: auto;
     }
 
     .firstNameBox {
-        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
-        font-size: 45px;
+        font-size: 2.35vw;
         letter-spacing: -2px;
-        width: 1564px;
-        height: 72;
-        /* top: 5648px; */
-        /* left: 167px; */
-        border: 0;
-        outline: 0;
-    }
-
-    .secondNameBox {
-        /* position: absolute; */
-        font-family: "SF-Pro-Ultralight";
-        font-size: 45px;
-        letter-spacing: -2px;
-        width: 1564px;
-        height: 72;
-        /* top: 5756px; */
-        /* left: 167px; */
         border: 0;
         outline: 0;
     }
 
     .emailBox {
-        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
-        font-size: 45px;
+        font-size: 2.35vw;
         letter-spacing: -2px;
-        width: 1564px;
-        height: 72;
-        /* top: 5864px; */
-        /* left: 167px; */
         border: 0;
         outline: 0;
     }
 
     .explainBox {
-        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
-        font-size: 45px;
+        font-size: 2.35vw;
         letter-spacing: -2px;
-        width: 1564px;
-        height: 72;
-        /* top: 5974px; */
-        /* left: 167px; */
         border: 0;
         outline: 0;
         resize: none;
     }
 
-    .gettingTime {
-        /* position: absolute; */
-        font-family: "SF-Pro-Ultralight";
-        font-size: 30px;
-        letter-spacing: -2px;
-        /* top: 6389px; */
-        /* left: 78px; */
-    }
-
-    .hourLocal {
-        /* margin-left: 111px; */
-        font-weight: normal;
-    }
-
     .sendButton{
-        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
-        font-size: 45px;
+        font-size: 2.35vw;
         letter-spacing: -2px;
-        /* top: 6139px; */
-        /* left: 960px; */
         color: #FF0000;
         cursor: pointer;
         border: none;
@@ -176,14 +142,25 @@
         transition: clip-path 1000ms ease;
     }
 
+    .bottomDiv {
+        display: flex;
+    }
+
+    .gettingTime {
+        font-family: "SF-Pro-Ultralight";
+        font-size: 30px;
+        letter-spacing: -2px;
+    }
+
+    .hourLocal {
+        font-weight: normal;
+    }
+
     .github {
-        /* position: absolute; */
         font-family: "SF-Pro-Ultralight";
         color: #111111;
         font-size: 30px;
         letter-spacing: -2px;
-        /* top: 6389px; */
-        /* left: 966px; */
         text-decoration: none;
         transition: clip-path 1000ms ease;
     }
@@ -203,12 +180,9 @@
     }
 
     .designContact {
-        position: absolute;
         font-family: "SF-Pro-Ultralight";
         font-size: 30px;
         letter-spacing: -2px;
-        /* top: 6359px; */
-        /* left: 1543px; */
     }
 
     .byContact {
