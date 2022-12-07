@@ -107,7 +107,7 @@
         flex-direction: column;
         gap: 5vh;
         width: 80%;
-        margin-top: 5%; /*This goes to @media when its created*/
+        margin-top: 9%; /*This goes to @media when its created*/
         margin-left: 10%; /*¿¿¿¿¿This goes to @media when its created?????*/
         height: auto;
     }
@@ -170,7 +170,7 @@
     .bottomDiv {
         display: flex;
         justify-content: space-between;
-        margin-top: 9%;
+        margin-top: 5%;
     }
 
     .cityAndTime {
