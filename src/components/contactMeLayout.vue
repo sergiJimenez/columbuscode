@@ -328,21 +328,21 @@
         }
     }
 
-    /*iPhone X, iPhone XR, iPhone 12 Pro, Pixel 5*/
+    /*Margins for the bottom of iPhone X, iPhone XR, iPhone 12 Pro, Pixel 5*/
     @media (min-width: 375px) and (min-height: 812px) {
         .bottomDiv {
             margin-top: 40%;
         }
     }
 
-    /*Samsung Galaxy S8+*/
+    /*Margins for the bottom of Samsung Galaxy S8+*/
     @media (width: 360px) and (height: 740px) {
         .bottomDiv {
             margin-top: 30%;
         }
     }
 
-    /*Galaxy Fold*/
+    /*Margins for the bottom of Galaxy Fold*/
     @media (max-width: 281px) and (max-height: 654px) {
         .bottomDiv {
             margin-top: 55%;
