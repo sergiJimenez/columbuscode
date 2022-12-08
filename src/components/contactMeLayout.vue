@@ -541,13 +541,9 @@
         .bottomDiv {
             margin-top: auto;
         }
+        
         .githubDiv {
             margin-bottom: 2%;
-        }
-
-        .github {
-            margin-top: 2.5%;
-            font-size: 1.55vw;
         }
     }
 </style>
