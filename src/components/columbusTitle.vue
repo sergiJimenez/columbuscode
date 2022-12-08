@@ -45,6 +45,8 @@
 
     /*Main conditions to the maximum resolution*/
     .mainColumbusTitle {
+        display: flex;
+        flex-direction: column;
         width: 100vw;
         height: 100vh;
         background-color: #111111;
@@ -207,7 +209,7 @@
         }
         
         .contactMe {
-            font-size: 3.85vw;
+            font-size: 5.35vw;
         }
 
         .imageLogo {
@@ -219,7 +221,8 @@
         }
 
         .scrollDown {
-            font-size: 3.85vw;
+            font-size: 5.35vw;
+            /* Reference to change: font-size: 3.85vw; */
         }
     }
 
@@ -246,7 +249,7 @@
         }
     }
 
-    /*Since 1441px to 2560px*/
+    /*Big laptop's/screen's. Since 1441px to 2560px*/
     @media (min-width: 1441px) and (max-width: 2560px) {
         .divContact {
             margin-right: 3.44%;

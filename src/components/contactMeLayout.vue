@@ -6,7 +6,8 @@
                 {{ contactData.titleAPI }}
             </div>
         </div>
-        <form class="formDiv" action="https://formsubmit.co/acasualcolumbus@gmail.com" method="POST">
+        <div>
+            <form class="formDiv" action="https://formsubmit.co/acasualcolumbus@gmail.com" method="POST">
             <!-- Name --> <input v-for="contactData in contactDatas" :key="contactData.nameAPI" class="firstNameBox" v-model="nameAPI" :placeholder="contactData.nameAPI" alt="First name" type="text" name="name" required/>
             <!-- Email --> <input v-for="contactData in contactDatas" :key="contactData.emailAPI" class="emailBox" v-model="emailAPI" :placeholder="contactData.emailAPI" alt="E-mail" type="text" name="email" required/>
             <!-- Explaining --> <textarea v-for="contactData in contactDatas" :key="contactData.explainAPI" class="explainBox" v-model="explainAPI" :placeholder="contactData.explainAPI" alt="Explain me about your dreams..." type="textarea" rows="4" name="message" required></textarea>
@@ -16,7 +17,8 @@
                 </button>
             </div> <!-- Let this <div> alone because the <p> has an error with padding and margin's -->
             <!-- This is a "Thank You page that we have to programming after. "<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"/> -->
-        </form>
+            </form>
+        </div>
         <div class="bottomDiv">
             <div class="cityAndTime">
                 <div class="gettingTime" v-for="contactData in contactDatas" :key="contactData.locationAPI" alt="Barcelona, España">
@@ -72,6 +74,7 @@
         color: #8f8f8f;
     }
 
+    /*Font families*/
     @font-face {
         font-family: 'SF-Pro-Ultralight';
         src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
@@ -81,6 +84,8 @@
     
     /*Main conditions to the maximum resolution*/
     .contactMeLayout {
+        display: flex;
+        flex-direction: column;
         width: 100vw;
         height: 100vh;
         background-color: #FFFFFF;
@@ -291,6 +296,7 @@
 
         .bottomDiv {
             flex-direction: column;
+            margin-top: auto;
         }
 
         .cityAndTime {
@@ -321,6 +327,7 @@
         .githubDiv {
             justify-content: flex-start;
             margin-left: 5%;
+            margin-bottom: 7.5%;
         }
 
         .github {
@@ -328,23 +335,271 @@
         }
     }
 
-    /*Margins for the bottom of iPhone X, iPhone XR, iPhone 12 Pro, Pixel 5*/
-    @media (min-height: 738px) and (max-height: 916px) {
+    /*Standard tablet's. Since 427px to 768px*/
+    @media (min-width: 427px) and (max-width: 768px) {
+        .titleDiv {
+            margin-left: 5%;
+        }
+
+        .contactMeText {
+            font-size: 5.35vw;
+            margin-top: 5.56%;
+        }
+
+        .formDiv {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .firstNameBox {
+            font-size: 5.35vw;
+        }
+
+        .emailBox {
+            font-size: 5.35vw;
+        }
+
+        .explainBox {
+            font-size: 5.35vw;
+        }
+
+        .sendButton {
+            font-size: 5.35vw;
+        }
+
         .bottomDiv {
-            margin-top: 40%;
+            margin-top: auto;
+        }
+
+        .cityAndTime {
+            gap: 2.5vw;
+        }
+
+        .gettingTime {
+            font-size: 3.35vw;
+        }
+
+        .hourLocal {
+            font-size: 3.35vw;
+        }
+        
+        .designContact {
+            font-size: 3.55vw;
+            margin-left: -5%;
+        }
+
+        .byContact {
+            font-size: 3.55vw;
+        }
+
+        .githubDiv {
+            margin-bottom: 4%;
+        }
+
+        .github {
+            margin-top: 2.5%;
+            font-size: 3.55vw;
         }
     }
 
-    /*Margins for the bottom of Samsung Galaxy S8+*/
-    @media (width: 360px) and (height: 740px) {
+    /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .titleDiv {
+            margin-left: 5%;
+        }
+
+        .contactMeText {
+            font-size: 5.35vw;
+            margin-top: 5.56%;
+        }
+
+        .formDiv {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .firstNameBox {
+            font-size: 5.35vw;
+        }
+
+        .emailBox {
+            font-size: 5.35vw;
+        }
+
+        .explainBox {
+            font-size: 5.35vw;
+        }
+
+        .sendButton {
+            font-size: 5.35vw;
+        }
+
         .bottomDiv {
-            margin-top: 30%;
+            margin-top: auto;
+        }
+
+        .cityAndTime {
+            gap: 2.5vw;
+        }
+
+        .gettingTime {
+            font-size: 3.35vw;
+        }
+
+        .hourLocal {
+            font-size: 3.35vw;
+        }
+        
+        .designContact {
+            font-size: 3.55vw;
+            margin-left: -5%;
+        }
+
+        .byContact {
+            font-size: 3.55vw;
+        }
+
+        .githubDiv {
+            margin-bottom: 4%;
+        }
+
+        .github {
+            margin-top: 2.5%;
+            font-size: 3.55vw;
         }
     }
-    /*Margins for the bottom of Galaxy Fold*/
-    @media (max-width: 280px) and (max-height: 654px) {
+
+    /*Standard laptop's/screen's. Since 1025px to 1440px*/
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        .titleDiv {
+            margin-left: 5%;
+        }
+
+        .contactMeText {
+            font-size: 2.85vw;
+            margin-top: 5.56%;
+        }
+
+        .formDiv {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .firstNameBox {
+            font-size: 2.85vw;
+        }
+
+        .emailBox {
+            font-size: 2.85vw;
+        }
+
+        .explainBox {
+            font-size: 2.85vw;
+        }
+
+        .sendButton {
+            font-size: 2.85vw;
+        }
+
         .bottomDiv {
-            margin-top: 55%;
+            margin-top: auto;
+        }
+
+        .cityAndTime {
+            gap: 2.5vw;
+        }
+
+        .gettingTime {
+            font-size: 1.55vw;
+        }
+
+        .hourLocal {
+            font-size: 1.55vw;
+        }
+        
+        .designContact {
+            font-size: 1.55vw;
+            margin-left: -5%;
+        }
+
+        .byContact {
+            font-size: 1.55vw;
+        }
+
+        .githubDiv {
+            margin-bottom: 2%;
+        }
+
+        .github {
+            margin-top: 2.5%;
+            font-size: 1.55vw;
         }
     }
+
+    /*Big laptop's/screen's. Since 1441px to 2560px*/
+    /* @media (min-width: 1025px) and (max-width: 1440px) {
+        .titleDiv {
+            margin-left: 5%;
+        }
+
+        .contactMeText {
+            font-size: 2.85vw;
+            margin-top: 5.56%;
+        }
+
+        .formDiv {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .firstNameBox {
+            font-size: 2.85vw;
+        }
+
+        .emailBox {
+            font-size: 2.85vw;
+        }
+
+        .explainBox {
+            font-size: 2.85vw;
+        }
+
+        .sendButton {
+            font-size: 2.85vw;
+        }
+
+        .bottomDiv {
+            margin-top: auto;
+        }
+
+        .cityAndTime {
+            gap: 2.5vw;
+        }
+
+        .gettingTime {
+            font-size: 1.55vw;
+        }
+
+        .hourLocal {
+            font-size: 1.55vw;
+        }
+        
+        .designContact {
+            font-size: 1.55vw;
+            margin-left: -5%;
+        }
+
+        .byContact {
+            font-size: 1.55vw;
+        }
+
+        .githubDiv {
+            margin-bottom: 2%;
+        }
+
+        .github {
+            margin-top: 2.5%;
+            font-size: 1.55vw;
+        }
+    } */
 </style>
