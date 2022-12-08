@@ -341,7 +341,6 @@
             margin-top: 30%;
         }
     }
-np
     /*Margins for the bottom of Galaxy Fold*/
     @media (max-width: 280px) and (max-height: 654px) {
         .bottomDiv {
