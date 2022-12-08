@@ -329,7 +329,7 @@
     }
 
     /*Margins for the bottom of iPhone X, iPhone XR, iPhone 12 Pro, Pixel 5*/
-    @media (min-width: 375px) and (min-height: 812px) {
+    @media (min-height: 738px) and (max-height: 916px) {
         .bottomDiv {
             margin-top: 40%;
         }
@@ -343,7 +343,7 @@
     }
 
     /*Margins for the bottom of Galaxy Fold*/
-    @media (max-width: 281px) and (max-height: 654px) {
+    @media (max-width: 280px) and (max-height: 654px) {
         .bottomDiv {
             margin-top: 55%;
         }
