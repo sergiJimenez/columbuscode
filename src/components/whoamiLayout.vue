@@ -40,7 +40,6 @@
         width: 1920px;
         height: 1080px;
         background-color: #111111;
-        /* overflow-x: hidden; */
     }
 
     .F1 {
