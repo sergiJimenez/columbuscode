@@ -1,19 +1,22 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import gestionExpediente from '../views/GestionExpediente.vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
+// import HomeView from '../views/HomeView.vue'
+
+const routes = [
+//   {
+//     path: '/',
+//     name: 'home',
+//     component: HomeView
+//   },
+//   {
+//     path: '/about',
+//     name: 'about',
+//     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+//   }
+]
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes: [
-        {
-            path: '/',
-            component: Home
-        },
-        {
-            path: '/expediente/gestion',
-            component: gestionExpediente
-        }
-    ]
+  history: createWebHashHistory(),
+  routes
 })
 
 export default router

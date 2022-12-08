@@ -537,62 +537,10 @@
     }
 
     /*Big laptop's/screen's. Since 1441px to 2560px*/
-    /* @media (min-width: 1025px) and (max-width: 1440px) {
-        .titleDiv {
-            margin-left: 5%;
-        }
-
-        .contactMeText {
-            font-size: 2.85vw;
-            margin-top: 5.56%;
-        }
-
-        .formDiv {
-            width: 90%;
-            margin-left: 5%;
-        }
-
-        .firstNameBox {
-            font-size: 2.85vw;
-        }
-
-        .emailBox {
-            font-size: 2.85vw;
-        }
-
-        .explainBox {
-            font-size: 2.85vw;
-        }
-
-        .sendButton {
-            font-size: 2.85vw;
-        }
-
+    @media (min-width: 1441px) and (max-width: 2560px) {
         .bottomDiv {
             margin-top: auto;
         }
-
-        .cityAndTime {
-            gap: 2.5vw;
-        }
-
-        .gettingTime {
-            font-size: 1.55vw;
-        }
-
-        .hourLocal {
-            font-size: 1.55vw;
-        }
-        
-        .designContact {
-            font-size: 1.55vw;
-            margin-left: -5%;
-        }
-
-        .byContact {
-            font-size: 1.55vw;
-        }
-
         .githubDiv {
             margin-bottom: 2%;
         }
@@ -601,5 +549,5 @@
             margin-top: 2.5%;
             font-size: 1.55vw;
         }
-    } */
+    }
 </style>
