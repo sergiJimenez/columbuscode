@@ -1,7 +1,11 @@
 <template>
     <div class="mainEsloganLayout" alt="Coding dreams">
-        <p class="C1">C</p><p class="O1">O</p><p class="D1">D</p><p class="I1">I</p><p class="N1">N</p><p class="G1">G</p>
-        <p class="D2">D</p><p class="R2">R</p><p class="E2">E</p><p class="A2">A</p><p class="M2">M</p><p class="S2">S</p>
+        <div class="codingDiv">
+            <div class="C1">C</div><div class="O1">O</div><div class="D1">D</div><div class="I1">I</div><div class="N1">N</div><div class="G1">G</div>
+        </div>
+        <div class="dreamsDiv">
+            <div class="D2">D</div><div class="R2">R</div><div class="E2">E</div><div class="A2">A</div><div class="M2">M</div><div class="S2">S</div>
+        </div>
     </div>
 </template>
 
@@ -12,101 +16,295 @@
     @font-face {
         font-family: 'Adamas';
         src: local('Adamas'), url('../fonts/Adamas-Regular.otf') format('opentype');
-        font-style: normal;
-        font-weight: normal;
     }
 
+    /*Main conditions to the maximum resolution*/
     .mainEsloganLayout {
+        width: 100vw;
+        height: 100vh;
         display: flex;
-        width: 1920px;
-        height: 1080px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: #111111;
         color: #FFFFFF;
-        /* overflow-x: hidden; */
+    }
+
+    .codingDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .C1 {
-        position: absolute;
-        left: 454px;
-        top: 1136px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
     }
+
     .O1 {
-        position: absolute;
-        left: 647px;
-        top: 1136px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        margin-left: -0.7%;
     }
+
     .D1 {
-        position: absolute;
-        left: 811px;
-        top: 1136px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        margin-left: -1.7%;
     }
+
     .I1 {
-        position: absolute;
-        left: 986px;
-        top: 1136px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        margin-left: -1.7%;
     }
+
     .N1 {
-        position: absolute;
-        left: 1046px;
-        top: 1136px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        margin-left: -1.7%;
     }
+
     .G1 {
-        position: absolute;
-        left: 1233px;
-        top: 1136px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        margin-left: -2%;
     }
+
+    .dreamsDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -2.5%;
+    }
+
     .D2 {
-        position: absolute;
-        left: 375px;
-        top: 1376px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
     }
+    
     .R2 {
-        position: absolute;
-        left: 552px;
-        top: 1376px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        margin-left: -1.6%;
     }
     .E2 {
-        position: absolute;
-        left: 741px;
-        top: 1376px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        margin-left: -1.2%;
     }
+
     .A2 {
-        position: absolute;
-        left: 930px;
-        top: 1376px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        margin-left: -0.4%;
     }
+
     .M2 {
-        position: absolute;
-        left: 1119px;
-        top: 1376px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        margin-left: -0.6%;
     }
+
     .S2 {
-        position: absolute;
-        left: 1348px;
-        top: 1376px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        margin-left: -1.3%;
+    }
+
+    /*Responsive conditions*/
+    /*Mobiles sizes S, M and L. Since 280px to 426px*/
+    @media (min-width: 280px) and (max-width: 426px) {
+        .C1 {
+            font-size: 19.5vw;
+        }
+
+        .O1 {
+            font-size: 19.5vw;
+            margin-left: -0.9%;
+        }
+
+        .D1 {
+            font-size: 19.5vw;
+            margin-left: -2.8%;
+        }
+
+        .I1 {
+            font-size: 19.5vw;
+            margin-left: -2.6%;
+        }
+
+        .N1 {
+            font-size: 19.5vw;
+            margin-left: -2.7%;
+        }
+
+        .G1 {
+            font-size: 19.5vw;
+            margin-left: -3.1%;
+        }
+
+        .dreamsDiv {
+            margin-top: -4.26%;
+            margin-left: 3%;
+        }
+
+        .D2 {
+            font-size: 19.5vw;
+        }
+        
+        .R2 {
+            font-size: 19.5vw;
+            margin-left: -2.4%;
+        }
+        .E2 {
+            font-size: 19.5vw;
+            margin-left: -1.9%;
+        }
+
+        .A2 {
+            font-size: 19.5vw;
+            margin-left: -0.4%;
+        }
+
+        .M2 {
+            font-size: 19.5vw;
+            margin-left: -0.9%;
+        }
+
+        .S2 {
+            font-size: 19.5vw;
+            margin-left: -2%;
+        }
+    }
+
+    /*Standard tablet's. Since 427px to 768px*/
+    @media (min-width: 427px) and (max-width: 768px) {
+        .C1 {
+            font-size: 19.5vw;
+        }
+
+        .O1 {
+            font-size: 19.5vw;
+            margin-left: -0.9%;
+        }
+
+        .D1 {
+            font-size: 19.5vw;
+            margin-left: -2.8%;
+        }
+
+        .I1 {
+            font-size: 19.5vw;
+            margin-left: -2.6%;
+        }
+
+        .N1 {
+            font-size: 19.5vw;
+            margin-left: -2.7%;
+        }
+
+        .G1 {
+            font-size: 19.5vw;
+            margin-left: -3.1%;
+        }
+
+        .dreamsDiv {
+            margin-top: -3.8%;
+        }
+
+        .D2 {
+            font-size: 19.5vw;
+        }
+        
+        .R2 {
+            font-size: 19.5vw;
+            margin-left: -2.4%;
+        }
+        .E2 {
+            font-size: 19.5vw;
+            margin-left: -1.9%;
+        }
+
+        .A2 {
+            font-size: 19.5vw;
+            margin-left: -0.4%;
+        }
+
+        .M2 {
+            font-size: 19.5vw;
+            margin-left: -0.9%;
+        }
+
+        .S2 {
+            font-size: 19.5vw;
+            margin-left: -2%;
+        }
+    }
+
+    /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .C1 {
+            font-size: 19.5vw;
+        }
+
+        .O1 {
+            font-size: 19.5vw;
+            margin-left: -0.9%;
+        }
+
+        .D1 {
+            font-size: 19.5vw;
+            margin-left: -2.8%;
+        }
+
+        .I1 {
+            font-size: 19.5vw;
+            margin-left: -2.6%;
+        }
+
+        .N1 {
+            font-size: 19.5vw;
+            margin-left: -2.7%;
+        }
+
+        .G1 {
+            font-size: 19.5vw;
+            margin-left: -3.1%;
+        }
+
+        .dreamsDiv {
+            margin-top: -3.8%;
+        }
+
+        .D2 {
+            font-size: 19.5vw;
+        }
+        
+        .R2 {
+            font-size: 19.5vw;
+            margin-left: -2.4%;
+        }
+        .E2 {
+            font-size: 19.5vw;
+            margin-left: -1.9%;
+        }
+
+        .A2 {
+            font-size: 19.5vw;
+            margin-left: -0.4%;
+        }
+
+        .M2 {
+            font-size: 19.5vw;
+            margin-left: -0.9%;
+        }
+
+        .S2 {
+            font-size: 19.5vw;
+            margin-left: -2%;
+        }
     }
 </style>
