@@ -6,7 +6,6 @@
                 {{ contactData.titleAPI }}
             </div>
         </div>
-        <!-- Submit form by FORMSUBMIT -->
         <form class="formDiv" action="https://formsubmit.co/acasualcolumbus@gmail.com" method="POST">
             <!-- Name --> <input v-for="contactData in contactDatas" :key="contactData.nameAPI" class="firstNameBox" v-model="nameAPI" :placeholder="contactData.nameAPI" alt="First name" type="text" name="name" required/>
             <!-- Email --> <input v-for="contactData in contactDatas" :key="contactData.emailAPI" class="emailBox" v-model="emailAPI" :placeholder="contactData.emailAPI" alt="E-mail" type="text" name="email" required/>
@@ -89,17 +88,17 @@
 
     .titleDiv {
         display: flex;
-        margin-left: 10%; /*This goes to @media when its created*/
+        margin-left: 10%;
     }
 
     .contactMeText {
         color: #111111;
         font-family: "SF-Pro-Ultralight";
-        font-size: 2.35vw;
+        font-size: 2.35vw; 
         letter-spacing: -2px;
         text-decoration: line-through;
         text-decoration-thickness: 1px;
-        margin-top: 5%; /*This goes to @media when its created*/
+        margin-top: 5%;
     }
 
     .formDiv {
@@ -107,8 +106,8 @@
         flex-direction: column;
         gap: 5vh;
         width: 80%;
-        margin-top: 9%; /*This goes to @media when its created*/
-        margin-left: 10%; /*¿¿¿¿¿This goes to @media when its created?????*/
+        margin-top: 9%;
+        margin-left: 10%;
         height: auto;
     }
 
@@ -255,5 +254,98 @@
         text-decoration-thickness: 1px;
         clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
         transition: clip-path 1000ms ease;
+    }
+
+    /*Responsive conditions*/
+    /*Mobiles sizes S, M and L. Since 280px to 426px*/
+    @media (min-width: 280px) and (max-width: 426px) {
+        .titleDiv {
+            margin-left: 5%;
+        }
+
+        .contactMeText {
+            font-size: 10.35vw;
+            margin-top: 5.56%;
+        }
+
+        .formDiv {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .firstNameBox {
+            font-size: 10.35vw;
+        }
+
+        .emailBox {
+            font-size: 10.35vw;
+        }
+
+        .explainBox {
+            font-size: 10.35vw;
+        }
+
+        .sendButton {
+            font-size: 10.35vw;
+        }
+
+        .bottomDiv {
+            flex-direction: column;
+        }
+
+        .cityAndTime {
+            gap: 45vw;
+        }
+
+        .gettingTime {
+            font-size: 6.35vw;
+        }
+
+        .hourLocal {
+            font-size: 6.35vw;
+        }
+
+        .authorDiv {
+            justify-content: flex-start;
+        }
+        
+        .designContact {
+            font-size: 6.55vw;
+            margin-left: 5%;
+        }
+
+        .byContact {
+            font-size: 6.55vw;
+        }
+
+        .githubDiv {
+            justify-content: flex-start;
+            margin-left: 5%;
+        }
+
+        .github {
+            font-size: 6.55vw;
+        }
+    }
+
+    /*iPhone X, iPhone XR, iPhone 12 Pro, Pixel 5*/
+    @media (min-width: 375px) and (min-height: 812px) {
+        .bottomDiv {
+            margin-top: 40%;
+        }
+    }
+
+    /*Samsung Galaxy S8+*/
+    @media (width: 360px) and (height: 740px) {
+        .bottomDiv {
+            margin-top: 30%;
+        }
+    }
+
+    /*Galaxy Fold*/
+    @media (max-width: 281px) and (max-height: 654px) {
+        .bottomDiv {
+            margin-top: 55%;
+        }
     }
 </style>
