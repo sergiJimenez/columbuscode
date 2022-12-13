@@ -1,6 +1,11 @@
 <template>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="mainColumbusTitle" id="theBeggining">
+        <!-- <div class="langs">
+            <a href="#" language="english" class="active">ENGLISH</a>
+            <a href="#" language="spanish">SPANISH</a>
+            <a href="#" language="catalan">CATALAN</a>
+        </div> -->
         <div class="divContact">
             <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
         </div>
@@ -18,6 +23,15 @@
 </template>
 
 <script>
+    // import multiLanguage from "/multiLanguage.json";
+
+    // export default {
+    //     data() {
+    //         return {
+    //             titleData: multiLanguage
+    //         }
+    //     }
+    // }
 </script>
 
 <style scoped>
