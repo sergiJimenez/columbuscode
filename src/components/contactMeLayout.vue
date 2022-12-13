@@ -46,7 +46,7 @@
 </template>
 
 <script>
-    import urlData from "/contactMe.json";
+    import urlData from "/src/multilanguage/contactMe.json";
 
     export default {
         data() {
