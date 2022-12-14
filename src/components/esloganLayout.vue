@@ -1,10 +1,20 @@
 <template>
     <div class="mainEsloganLayout" alt="Coding dreams">
-        <div class="codingDiv">
-            <div class="C1">C</div><div class="O1">O</div><div class="D1">D</div><div class="I1">I</div><div class="N1">N</div><div class="G1">G</div>
+        <div class="codingDiv" alt="Coding">
+            <div class="C1">C</div>
+            <div class="O1">O</div>
+            <div class="D1">D</div>
+            <div class="I1">I</div>
+            <div class="N1">N</div>
+            <div class="G1">G</div>
         </div>
-        <div class="dreamsDiv">
-            <div class="D2">D</div><div class="R2">R</div><div class="E2">E</div><div class="A2">A</div><div class="M2">M</div><div class="S2">S</div>
+        <div class="dreamsDiv" alt="Dreams">
+            <div class="D2">D</div>
+            <div class="R2">R</div>
+            <div class="E2">E</div>
+            <div class="A2">A</div>
+            <div class="M2">M</div>
+            <div class="S2">S</div>
         </div>
     </div>
 </template>
