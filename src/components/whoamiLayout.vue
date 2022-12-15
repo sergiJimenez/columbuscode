@@ -25,10 +25,9 @@
             </div>
         </div>
         <div class="contentInformationWhoIAm" alt="Hello there! I'm a web developer based in Barcelona focused on coding people's dreams. Working with technologies like VueJS and ReactJS, researching and implementing the new ones. Aficionated to create video games in Unity with a huge story behind them but always prioritizing my second passion, the acoustic area.">
-            Hello there! I'm a web developer based in Barcelona focused on coding people's dreams.<br>
-            Working with technologies like VueJS and ReactJS, researching and implementing the new ones.<br>
-            Aficionated to create video games in Unity with a huge story behind them but always<br>
-            prioritizing my second passion, the acoustic area.
+            Hello there user!<br>
+            I'm a web developer based in Barcelona focused on coding people's dreams.<br>
+            Working with technologies like VueJS and ReactJS, researching and implementing the new ones. Aficionated to create video games in Unity with a huge story behind them but always prioritizing my second passion, the acoustic area.
         </div>
     </div>
 </template>
@@ -201,7 +200,7 @@
 
     .contentInformationWhoIAm {
         display: flex;
-        width: 100%;
+        width: 85%;
         text-align: center;
         justify-content: center;
         font-family: "SF-Pro-Ultralight";
