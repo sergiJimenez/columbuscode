@@ -100,6 +100,7 @@
         font-size: 12.5vw;
         margin-left: -1.6%;
     }
+    
     .E2 {
         font-family: "Adamas";
         font-size: 12.5vw;
