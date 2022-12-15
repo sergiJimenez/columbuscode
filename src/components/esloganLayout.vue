@@ -189,7 +189,7 @@
             margin-left: -2%;
         }
     }
-
+    
     /*Standard tablet's. Since 427px to 768px*/
     @media (min-width: 427px) and (max-width: 768px) {
         .C1 {
