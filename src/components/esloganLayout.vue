@@ -143,11 +143,7 @@
 
     /*Responsive conditions*/
     /*Mobiles sizes S, M and L. Since 280px to 426px*/
-    @media (min-width: 280px) and (max-width: 426px) {
-        .mainEsloganLayout {
-            margin-left: 1%;
-        }
-        
+    @media (min-width: 280px) and (max-width: 426px) {        
         .C1 {
             font-size: 19.5vw;
         }
@@ -179,7 +175,6 @@
 
         .dreamsDiv {
             margin-top: -4.26%;
-            margin-left: 3%;
         }
 
         .D2 {
@@ -213,10 +208,6 @@
     
     /*Standard tablet's. Since 427px to 768px*/
     @media (min-width: 427px) and (max-width: 768px) {
-        .mainEsloganLayout {
-            margin-left: 2%;
-        }
-        
         .C1 {
             font-size: 19.5vw;
         }
@@ -281,10 +272,6 @@
 
     /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
-        .mainEsloganLayout {
-            margin-left: 2%;
-        }
-        
         .C1 {
             font-size: 19.5vw;
         }

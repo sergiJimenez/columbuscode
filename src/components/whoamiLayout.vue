@@ -66,8 +66,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* background-color: #111111; */
-        background-color: cadetblue;
+        background-color: #111111;
+        /* background-color: aquamarine; */
     }
 
     .fullstackDeveloperDiv {
