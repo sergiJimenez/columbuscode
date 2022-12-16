@@ -201,8 +201,9 @@
 
     .contentInformationWhoIAm {
         display: flex;
-        width: 85%;
-        text-align: center;
+        width: 80%;
+        text-align: justify;
+        margin-top: 2%;
         justify-content: center;
         font-family: "SF-Pro-Ultralight";
         font-size: 2.35vw;
@@ -212,4 +213,14 @@
 
     /*Responsive conditions*/
     /*Mobiles sizes S, M and L. Since 280px to 426px*/
+    @media (min-width: 280px) and (max-width: 426px) {
+        .whoAmILayout {
+            height: 200vh;
+        }
+
+        .contentInformationWhoIAm {
+            font-size: 10.35vw;
+            width: 90%;
+        }
+    }
 </style>

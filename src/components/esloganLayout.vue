@@ -38,7 +38,7 @@
         justify-content: center;
         background-color: #111111;
         color: #FFFFFF;
-    }
+        }
 
     .codingDiv {
         display: flex;
