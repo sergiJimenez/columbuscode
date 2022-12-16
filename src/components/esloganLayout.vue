@@ -1,12 +1,18 @@
 <template>
     <div class="mainEsloganLayout" alt="Coding dreams">
         <div class="codingDiv" alt="Coding">
-            <div class="C1">C</div>
-            <div class="O1">O</div>
-            <div class="D1">D</div>
-            <div class="I1">I</div>
-            <div class="N1">N</div>
-            <div class="G1">G</div>
+            <!-- <div class="responsiveSpan0"> -->
+                <div class="C1">C</div>
+                <div class="O1">O</div>
+            <!-- </div> -->
+            <!-- <span class="responsiveSpan1"> -->
+                <div class="D1">D</div>
+                <div class="I1">I</div>
+            <!-- </span> -->
+            <!-- <span class="responsiveSpan2"> -->
+                <div class="N1">N</div>
+                <div class="G1">G</div>
+            <!-- </span> -->
         </div>
         <div class="dreamsDiv" alt="Dreams">
             <div class="D2">D</div>
@@ -47,6 +53,10 @@
         width: 100%;
     }
 
+    .responsiveSpan0 {
+        display: flex;
+    }
+
     .C1 {
         font-family: "Adamas";
         font-size: 12.5vw;
@@ -56,6 +66,13 @@
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -0.7%;
+    }
+
+    .responsiveSpan1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .D1 {
@@ -68,6 +85,13 @@
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.7%;
+    }
+
+    .responsiveSpan2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
     }
 
     .N1 {
