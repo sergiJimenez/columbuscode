@@ -83,6 +83,7 @@
         letter-spacing: -2px;
         text-decoration: none;
         transition: clip-path 1000ms ease;
+        transition: 650ms; /* Resize */
         margin-top: 2.56%;
     }
 
@@ -110,6 +111,7 @@
 
     .imageLogo {
         width: 14.8%;
+        transition: 650ms; /* Resize */
         transition: transform 2.5s;
     }
 
@@ -129,6 +131,7 @@
         font-family: "SF-Pro-Ultralight";
         font-size: 2.35vw;
         letter-spacing: -2px;
+        transition: 650ms; /* Resize */
     }
 
     .lineCircleDiv {
@@ -141,6 +144,7 @@
         width: 2px;
         height: 76px;
         background-color: #FFFFFF;
+        transition: 650ms; /* Resize */
     }
 
     .circle {
@@ -150,6 +154,7 @@
         height: 16px;
         border-radius: 50px;
         animation: moveDown 6s ease-in-out alternate infinite;
+        transition: 650ms; /* Resize */
     }
 
     /*Circle animation*/

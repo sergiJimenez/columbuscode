@@ -1,21 +1,27 @@
 <template>
     <div class="mainEsloganLayout" alt="Coding dreams">
         <div class="codingDiv" alt="Coding">
-            <div class="C1">C</div>
-            <div class="O1">O</div>
-            <div class="D1">D</div>
-            <div class="I1">I</div>
-            <div class="N1">N</div>
-            <div class="G1">G</div>
+            <div class="responsiveSpan0">
+                <div class="C1">C</div>
+                <div class="O1">O</div>
+            </div>
+            <div class="responsiveSpan1">
+                <div class="D1">D</div>
+                <div class="I1">I</div>
+            </div>
+            <div class="responsiveSpan2">
+                <div class="N1">N</div>
+                <div class="G1">G</div>
+            </div>
         </div>
-        <div class="dreamsDiv" alt="Dreams">
+        <!-- <div class="dreamsDiv" alt="Dreams">
             <div class="D2">D</div>
             <div class="R2">R</div>
             <div class="E2">E</div>
             <div class="A2">A</div>
             <div class="M2">M</div>
             <div class="S2">S</div>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -47,45 +53,56 @@
         width: 100%;
     }
 
+    .responsiveSpan0 {
+        display: flex;
+    }
+
     .C1 {
         font-family: "Adamas";
         font-size: 12.5vw;
-        transition: 650ms;
     }
 
     .O1 {
         font-family: "Adamas";
         font-size: 12.5vw;
-        margin-left: -0.7%;
-        transition: 650ms;
+        /* COMMENT TO TEST THE NEW ONE ==========> margin-left: -0.7%; */
+        margin-left: -3.2%;
+    }
+
+    .responsiveSpan1 {
+        display: flex;
+        margin-left: -2.4%;
     }
 
     .D1 {
         font-family: "Adamas";
         font-size: 12.5vw;
-        margin-left: -1.7%;
-        transition: 650ms;
+        /* COMMENT TO TEST THE NEW ONE ==========> margin-left: -1.7%; */
     }
 
     .I1 {
         font-family: "Adamas";
         font-size: 12.5vw;
-        margin-left: -1.7%;
-        transition: 650ms;
+        /* COMMENT TO TEST THE NEW ONE ==========> margin-left: -1.7%; */
+        margin-left: -10.8%;
+    }
+
+    .responsiveSpan2 {
+        display: flex;
+        margin-left: -3.4%;
     }
 
     .N1 {
         font-family: "Adamas";
         font-size: 12.5vw;
-        margin-left: -1.7%;
-        transition: 650ms;
+        /* COMMENT TO TEST THE NEW ONE ==========> margin-left: -1.7%; */
     }
 
     .G1 {
         font-family: "Adamas";
         font-size: 12.5vw;
-        margin-left: -2%;
-        transition: 650ms;
+        /* COMMENT TO TEST THE NEW ONE ==========> margin-left: -2%; */
+        margin-left: -8.8%;
     }
 
     .dreamsDiv {
@@ -99,85 +116,97 @@
     .D2 {
         font-family: "Adamas";
         font-size: 12.5vw;
-        transition: 650ms;
     }
     
     .R2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.6%;
-        transition: 650ms;
     }
     
     .E2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.2%;
-        transition: 650ms;
     }
 
     .A2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -0.4%;
-        transition: 650ms;
     }
 
     .M2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -0.6%;
-        transition: 650ms;
     }
 
     .S2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.3%;
-        transition: 650ms;
-    }
-
-    .C1:hover, .O1:hover, .D1:hover, .I1:hover, .N1:hover, .G1:hover, .D2:hover, .R2:hover, .E2:hover, .A2:hover, .M2:hover, .S2:hover {
-        color: #FF0000;
     }
 
     /*Responsive conditions*/
     /*Mobiles sizes S, M and L. Since 280px to 426px*/
     @media (min-width: 280px) and (max-width: 426px) {
-        .mainEsloganLayout {
-            margin-left: 1%;
+        .codingDiv {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .responsiveSpan0 {
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            margin-top: 0.1%;
         }
         
         .C1 {
-            font-size: 19.5vw;
+            font-size: 58.4vw;
+            width: 100%;
         }
 
         .O1 {
-            font-size: 19.5vw;
-            margin-left: -0.9%;
+            font-size: 58.4vw;
+            width: 100%;
+        }
+
+        .responsiveSpan1 {
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            margin-top: -11.6%;
         }
 
         .D1 {
-            font-size: 19.5vw;
-            margin-left: -2.8%;
+            font-size: 58.4vw;
         }
 
         .I1 {
-            font-size: 19.5vw;
-            margin-left: -2.6%;
+            font-size: 58.4vw;
+        }
+
+        .responsiveSpan2 {
+            width: 100vw;
+            height: 100vh;
+            justify-content: flex-end;
+            margin-top: -11.6%;
         }
 
         .N1 {
-            font-size: 19.5vw;
-            margin-left: -2.7%;
+            font-size: 58.4vw;
         }
 
         .G1 {
-            font-size: 19.5vw;
-            margin-left: -3.1%;
+            font-size: 58.4vw;
         }
 
-        .dreamsDiv {
+        /* .dreamsDiv {
             margin-top: -4.26%;
             margin-left: 3%;
         }
@@ -208,15 +237,11 @@
         .S2 {
             font-size: 19.5vw;
             margin-left: -2%;
-        }
+        } */
     }
     
     /*Standard tablet's. Since 427px to 768px*/
     @media (min-width: 427px) and (max-width: 768px) {
-        .mainEsloganLayout {
-            margin-left: 2%;
-        }
-        
         .C1 {
             font-size: 19.5vw;
         }
@@ -281,10 +306,6 @@
 
     /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
-        .mainEsloganLayout {
-            margin-left: 2%;
-        }
-        
         .C1 {
             font-size: 19.5vw;
         }
