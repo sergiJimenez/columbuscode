@@ -86,54 +86,63 @@
     .F1 {
         font-family: "Adamas";
         font-size: 12.5vw;
+        transition: 650ms;
     }
     
     .U1 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -0.9%;
+        transition: 650ms;
     }
 
     .L1 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.6%;
+        transition: 650ms;
     }
 
     .L1-1 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.1%;
+        transition: 650ms;
     }
 
     .S1 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -0.5%;
+        transition: 650ms;
     }
 
     .T1 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -0.3%;
+        transition: 650ms;
     }
 
     .A1 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -2.5%;
+        transition: 650ms;
     }
 
     .C1 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -2%;
+        transition: 650ms;
     }
 
     .K1 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.3%;
+        transition: 650ms;
     }
 
     .developerDiv {
@@ -148,54 +157,63 @@
     .D2 {
         font-family: "Adamas";
         font-size: 12.5vw;
+        transition: 650ms;
     }
 
     .E2-0 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.5%;
+        transition: 650ms;
     }
 
     .V2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -0.1%;
+        transition: 650ms;
     }
 
     .E2-1 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -2%;
+        transition: 650ms;
     }
 
     .L2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.8%;
+        transition: 650ms;
     }
 
     .O2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -0.8%;
+        transition: 650ms;
     }
 
     .P2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.7%;
+        transition: 650ms;
     }
 
     .E2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.5%;
+        transition: 650ms;
     }
 
     .R2 {
         font-family: "Adamas";
         font-size: 12.5vw;
         margin-left: -1.8%;
+        transition: 650ms;
     }
 
     .contentInformationWhoIAm {
@@ -207,6 +225,10 @@
         font-family: "SF-Pro-Ultralight";
         font-size: 2.35vw;
         letter-spacing: -2px;
+        color: #FFFFFF;
+    }
+
+    .F1:hover, .U1:hover, .L1:hover, .L1-1:hover, .S1:hover, .T1:hover, .A1:hover, .C1:hover, .K1:hover, .D2:hover, .E2-0:hover, .V2:hover, .E2-1:hover, .L2:hover, .O2:hover, .P2:hover, .E2:hover, .R2:hover {
         color: #FFFFFF;
     }
 
