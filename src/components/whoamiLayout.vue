@@ -224,4 +224,15 @@
             margin-bottom: 20%;
         }
     }
+
+    /*Standard tablet's. Since 427px to 768px*/
+    @media (min-width: 427px) and (max-width: 768px) {
+        .contentInformationWhoIAm {
+            font-size: 5.35vw;
+            width: 90%;
+            margin-top: auto;
+            margin-bottom: 10%;
+        }
+        
+    }
 </style>

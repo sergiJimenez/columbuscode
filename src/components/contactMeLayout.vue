@@ -376,20 +376,20 @@
         }
 
         .gettingTime {
-            font-size: 3.35vw;
+            font-size: 4.35vw;
         }
 
         .hourLocal {
-            font-size: 3.35vw;
+            font-size: 4.35vw;
         }
         
         .designContact {
-            font-size: 3.55vw;
+            font-size: 4.55vw;
             margin-left: -5%;
         }
 
         .byContact {
-            font-size: 3.55vw;
+            font-size: 4.55vw;
         }
 
         .githubDiv {
@@ -398,7 +398,7 @@
 
         .github {
             margin-top: 2.5%;
-            font-size: 3.55vw;
+            font-size: 4.55vw;
         }
     }
 
