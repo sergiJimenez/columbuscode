@@ -235,12 +235,23 @@
         }
     }
 
+    /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
         .contentInformationWhoIAm {
             font-size: 5.35vw;
             width: 90%;
             margin-top: auto;
             margin-bottom: 10%;
+        }
+    }
+
+    /*Standard laptop's/screen's. Since 1025px to 1440px*/
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        .contentInformationWhoIAm {
+            font-size: 2.85vw;
+            width: 90%;
+            margin-top: auto;
+            margin-bottom: 5%;
         }
     }
 </style>
