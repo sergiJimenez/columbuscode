@@ -67,7 +67,6 @@
         align-items: center;
         justify-content: center;
         background-color: #111111;
-        /* background-color: aquamarine; */
     }
 
     .fullstackDeveloperDiv {
@@ -202,7 +201,7 @@
     .contentInformationWhoIAm {
         display: flex;
         width: 80%;
-        text-align: justify;
+        text-align: center;
         margin-top: 2%;
         justify-content: center;
         font-family: "SF-Pro-Ultralight";
@@ -221,6 +220,8 @@
         .contentInformationWhoIAm {
             font-size: 10.35vw;
             width: 90%;
+            margin-top: auto;
+            margin-bottom: 20%;
         }
     }
 </style>
