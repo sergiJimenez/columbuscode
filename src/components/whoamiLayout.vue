@@ -233,6 +233,14 @@
             margin-top: auto;
             margin-bottom: 10%;
         }
-        
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .contentInformationWhoIAm {
+            font-size: 5.35vw;
+            width: 90%;
+            margin-top: auto;
+            margin-bottom: 10%;
+        }
     }
 </style>
