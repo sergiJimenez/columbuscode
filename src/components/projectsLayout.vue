@@ -86,42 +86,49 @@
     .R {
         font-family: "Adamas";
         font-size: 12.5vw;
+        margin-left: -1.2%;
         transition: 650ms;
     }
 
     .O {
         font-family: "Adamas";
         font-size: 12.5vw;
+        margin-left: -1.3%;
         transition: 650ms;
     }
 
     .J {
         font-family: "Adamas";
         font-size: 12.5vw;
+        margin-left: -2.7%;
         transition: 650ms;
     }
 
     .E {
         font-family: "Adamas";
         font-size: 12.5vw;
+        margin-left: -2.2%;
         transition: 650ms;
     }
 
     .C {
         font-family: "Adamas";
         font-size: 12.5vw;
+        margin-left: -2.2%;
         transition: 650ms;
     }
 
     .T {
         font-family: "Adamas";
         font-size: 12.5vw;
+        margin-left: -0.7%;
         transition: 650ms;
     }
 
     .S {
         font-family: "Adamas";
         font-size: 12.5vw;
+        margin-left: -1.2%;
         transition: 650ms;
     }
 
