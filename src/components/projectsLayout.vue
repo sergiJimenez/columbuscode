@@ -10,7 +10,7 @@
             <div class="T">T</div>
             <div class="S">S</div>
         </div>
-        <!-- <div class="contentProjects">
+        <div class="contentProjects">
             <div class="project1">
                 <div class="circleProjects1">
                     <img class="gameImage" src="../assets/projects/gameCircle.png" alt="Game image">
@@ -27,7 +27,7 @@
             <p class="titleProject2" alt="Corporate identity manual">
                 Corporate Identity Manual
             </p>
-        </div> -->
+        </div>
     </div>
 </template>
 
@@ -75,6 +75,7 @@
         align-items: center;
         width: 100%;
         color: #FFFFFF;
+        margin-top: 3%;
         margin-bottom: auto;
     }
 
@@ -137,13 +138,20 @@
         color: #ff0000;
     }
 
-    /* .contentProjects {
+    .contentProjects {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: #FFFFFF;
+        margin-top: 3%;
+        margin-bottom: auto;
+    }
 
-    } */
+    .project1 {
 
-    /* .project1 {
-
-    } */
+    }
 
     /* .circleProjects1 {
         position: absolute;
