@@ -12,17 +12,17 @@
         </div>
         <div class="contentProjects">
             <div class="project1">
-                <div class="circleProjects1">
+                <!-- <div class="circleProjects1">
                     <img class="gameImage" src="../assets/projects/gameCircle.png" alt="Game image">
-                </div>
+                </div> -->
                 <p class="titleProject1" alt="Gurmann Adventure's">
                     Gurmann Adventure's
                 </p>
             </div>
             <div class="project2">
-                <div class="circleProjects2">
+                <!-- <div class="circleProjects2">
                     <img class="">
-                </div>
+                </div> -->
             </div>
             <p class="titleProject2" alt="Corporate identity manual">
                 Corporate Identity Manual
@@ -46,13 +46,6 @@
     @font-face {
         font-family: 'SF-Pro-Ultralight';
         src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
-        font-style: normal;
-        font-weight: normal;
-    }
-
-    @font-face {
-        font-family: 'SF-Pro-UltralightItalic';
-        src: local('SF-Pro-UltralightItalic'), url('../fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
@@ -170,9 +163,16 @@
 
     } */
 
-    /* .titleProject1 {
-
-    } */
+    .titleProject1 {
+        font-family: "SF-Pro-Ultralight";
+        font-size: 2.35vw;
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 2%;
+        letter-spacing: -2px;
+    }
 
     .project2 {
         display: flex;
@@ -191,7 +191,14 @@
         border-radius:200px;
     } */
 
-    /* .titleProject2 {
-
-    } */
+    .titleProject2 {
+        font-family: "SF-Pro-Ultralight";
+        font-size: 2.35vw;
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 2%;
+        letter-spacing: -2px;
+    }
 </style>
