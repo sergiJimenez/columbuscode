@@ -150,7 +150,11 @@
     }
 
     .project1 {
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     /* .circleProjects1 {
@@ -170,9 +174,13 @@
 
     } */
 
-    /* .project2 {
-
-    } */
+    .project2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
     
     /* .circleProjects2 {
         position: absolute;
