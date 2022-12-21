@@ -1,6 +1,6 @@
 <template>
     <div class="projectsLayout">
-        <div alt="titleProjects">
+        <div class="titleProjects">
             <div class="P">P</div>
             <div class="R">R</div>
             <div class="O">O</div>
@@ -10,10 +10,10 @@
             <div class="T">T</div>
             <div class="S">S</div>
         </div>
-        <div class="contentProjects">
+        <!-- <div class="contentProjects">
             <div class="project1">
                 <div class="circleProjects1">
-                    <img class="gameImage" src="../assets/projects/gameCircle.png" alt="Proyect game image">
+                    <img class="gameImage" src="../assets/projects/gameCircle.png" alt="Game image">
                 </div>
                 <p class="titleProject1" alt="Gurmann Adventure's">
                     Gurmann Adventure's
@@ -27,7 +27,7 @@
             <p class="titleProject2" alt="Corporate identity manual">
                 Corporate Identity Manual
             </p>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -42,81 +42,91 @@
         font-style: normal;
         font-weight: normal;
     }
-    
+
+    @font-face {
+        font-family: 'SF-Pro-Ultralight';
+        src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    @font-face {
+        font-family: 'SF-Pro-UltralightItalic';
+        src: local('SF-Pro-UltralightItalic'), url('../fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    /*Main conditions to the maximum resolution*/
     .projectsLayout {
         display: flex;
-        width: 1920px;
-        height: 1080px;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: #111111;
+    }
+
+    .titleProjects {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         color: #FFFFFF;
     }
 
-    /* .titleProjects {
-
-    } */
-
     .P {
-        position: absolute;
-        left: 287px;
-        top: 4176px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        transition: 650ms;
     }
 
     .R {
-        position: absolute;
-        left: 467px;
-        top: 4176px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        transition: 650ms;
     }
 
     .O {
-        position: absolute;
-        left: 654px;
-        top: 4176px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        transition: 650ms;
     }
 
     .J {
-        position: absolute;
-        left: 798px;
-        top: 4176px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        transition: 650ms;
     }
 
     .E {
-        position: absolute;
-        left: 947px;
-        top: 4176px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        transition: 650ms;
     }
 
     .C {
-        position: absolute;
-        left: 1100px;
-        top: 4176px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        transition: 650ms;
     }
 
     .T {
-        position: absolute;
-        left: 1293px;
-        top: 4176px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        transition: 650ms;
     }
 
     .S {
-        position: absolute;
-        left: 1441px;
-        top: 4176px;
         font-family: "Adamas";
-        font-size: 240px;
+        font-size: 12.5vw;
+        transition: 650ms;
+    }
+
+    .P:hover, .R:hover, .O:hover, .J:hover, .E:hover, .C:hover, .T:hover, .S:hover {
+        color: #ff0000;
     }
 
     /* .contentProjects {
@@ -127,14 +137,14 @@
 
     } */
 
-    .circleProjects1 {
+    /* .circleProjects1 {
         position: absolute;
         width:345px;
         height:345px;
         margin-top: 480px;
         margin-left: 295px;
         border-radius:200px;
-    }
+    } */
 
     /* .gameImage {
 
@@ -148,14 +158,14 @@
 
     } */
     
-    .circleProjects2 {
+    /* .circleProjects2 {
         position: absolute;
         width:345px;
         height:345px;
         margin-top: 480px;
         margin-left: 1280px;
         border-radius:200px;
-    }
+    } */
 
     /* .titleProject2 {
 
