@@ -75,6 +75,7 @@
         align-items: center;
         width: 100%;
         color: #FFFFFF;
+        margin-bottom: auto;
     }
 
     .P {
