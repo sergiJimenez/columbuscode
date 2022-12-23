@@ -29,7 +29,7 @@
             </div>
             <div class="project3">
                 <div class="titleProject3">
-                    Eat Me
+                    WhereToEatIn
                 </div>
             </div>
         </div>
