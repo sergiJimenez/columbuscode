@@ -15,18 +15,23 @@
                 <!-- <div class="circleProjects1">
                     <img class="gameImage" src="../assets/projects/gameCircle.png" alt="Game image">
                 </div> -->
-                <p class="titleProject1" alt="Gurmann Adventure's">
-                    Gurmann Adventure's
-                </p>
+                <div class="titleProject1" alt="Falcon Project">
+                    Falcon Project
+                </div>
             </div>
             <div class="project2">
                 <!-- <div class="circleProjects2">
                     <img class="">
                 </div> -->
+                <div class="titleProject2" alt="Gurmann's Adventure">
+                    Gurmann's Adventure
+                </div>
             </div>
-            <p class="titleProject2" alt="Corporate identity manual">
-                Corporate Identity Manual
-            </p>
+            <div class="project3">
+                <div class="titleProject3">
+                    Eat Me
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -127,10 +132,6 @@
         transition: 650ms;
     }
 
-    .P:hover, .R:hover, .O:hover, .J:hover, .E:hover, .C:hover, .T:hover, .S:hover {
-        color: #ff0000;
-    }
-
     .contentProjects {
         display: flex;
         flex-direction: row;
@@ -200,5 +201,54 @@
         justify-content: center;
         margin-top: 2%;
         letter-spacing: -2px;
+    }
+
+    .project3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .titleProject3 {
+        font-family: "SF-Pro-Ultralight";
+        font-size: 2.35vw;
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 2%;
+        letter-spacing: -2px;
+    }
+
+    .P:hover, .R:hover, .O:hover, .J:hover, .E:hover, .C:hover, .T:hover, .S:hover {
+        color: #ff0000;
+    }
+
+    /*Responsive conditions*/
+    /*Mobiles sizes S, M and L. Since 280px to 426px*/
+    @media (min-width: 280px) and (max-width: 426px) {
+
+    }
+
+    /*Standard tablet's. Since 427px to 768px*/
+    @media (min-width: 427px) and (max-width: 768px) {
+
+    }
+
+    /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
+    @media (min-width: 769px) and (max-width: 1024px) {
+
+    }
+
+    /*Standard laptop's/screen's. Since 1025px to 1440px*/
+    @media (min-width: 1025px) and (max-width: 1440px) {
+
+    }
+
+    /*Big laptop's/screen's. Since 1441px to 2560px*/
+    @media (min-width: 1441px) and (max-width: 2560px) {
+        
     }
 </style>

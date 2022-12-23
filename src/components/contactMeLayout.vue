@@ -21,12 +21,12 @@
         </div>
         <div class="bottomDiv">
             <div class="cityAndTime">
-                <div class="gettingTime" v-for="contactData in contactDatas" :key="contactData.locationAPI" alt="Barcelona, España">
+                <a href="https://www.google.es/maps/place/Barcelona/data=!4m2!3m1!1s0x12a49816718e30e5:0x44b0fb3d4f47660a?sa=X&ved=2ahUKEwjOjdzwto78AhWSTKQEHUNsACAQ8gF6BAgPEAE" class="gettingTime" v-for="contactData in contactDatas" :key="contactData.locationAPI" target="_blank" alt="Barcelona, ES">
                     {{ contactData.locationAPI }}
-                </div>
-                <b class="hourLocal">
+                </a>
+                <div class="hourLocal">
                     {{ timestamp }}
-                </b>
+                </div>
             </div>
             <div class="authorDiv">
                 <div class="designContact" v-for="contactData in contactDatas" :key="contactData.designByAPI" alt="Design by">
@@ -58,9 +58,8 @@
         methods: {
             getNow: function() {
                 const today = new Date();
-                const time = today.getHours() + ":" + today.getMinutes();
-                const dateTime = time;
-                this.timestamp = dateTime;
+                const time = today.getHours() + ":" + (today.getMinutes()<10?'0':'') + today.getMinutes();
+                this.timestamp = time;
             }
         },
         async created() {
@@ -189,6 +188,23 @@
         font-size: 1.55vw;
         letter-spacing: -2px;
         font-weight: normal;
+        text-decoration: none;
+        color: #111111;
+        transition: clip-path 1000ms ease;
+    }
+
+    .gettingTime:hover::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .gettingTime::before {
+        position: absolute;
+        content: attr(alt);
+        color: #FF0000;
+        text-decoration: line-through;
+        text-decoration-thickness: 1px;
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: clip-path 1000ms ease;
     }
 
     .hourLocal {
