@@ -1,20 +1,17 @@
 <template>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="mainColumbusTitle" id="theBeggining">
-        <!-- <div class="langs">
-            <a href="#" language="english" class="active">ENGLISH</a>
-            <a href="#" language="spanish">SPANISH</a>
-            <a href="#" language="catalan">CATALAN</a>
-        </div> -->
-        <div class="divContact">
-            <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
-        </div>
-        <div class="divImage">
+        <scrollParallax>
+            <div class="divContact" ref="contactButton">
+                <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
+            </div>
+        </scrollParallax>
+        <div class="divImage" ref="imageLogo">
             <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
         </div>
         <div class="divAnimation">
-            <p class="scrollDown" alt="Scroll down">Scroll down</p>
-            <div class="lineCircleDiv">
+            <p class="scrollDown" ref="scrollDownText" alt="Scroll down">Scroll down</p>
+            <div class="lineCircleDiv" ref="animationLineCircle">
                 <div class="verticalLine" alt="Vertical line"></div>
                 <!-- <div class="circle" alt="Circle"></div> -->
             </div>
@@ -23,6 +20,12 @@
 </template>
 
 <script>
+    import scrollParallax from './scrollParallax.vue';
+    export default {
+        components: {
+            scrollParallax
+        }
+    };
 </script>
 
 <style scoped>
