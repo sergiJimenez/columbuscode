@@ -1,6 +1,6 @@
 <template>
     <div class="mainEsloganLayout" alt="Coding dreams">
-        <div class="codingDiv" alt="Coding">
+        <div class="codingDiv" alt="CODING">
             <div class="C1">C</div>
             <div class="O1">O</div>
             <div class="D1">D</div>
@@ -8,7 +8,7 @@
             <div class="N1">N</div>
             <div class="G1">G</div>
         </div>
-        <div class="dreamsDiv" alt="Dreams">
+        <div class="dreamsDiv" alt="DREAMS">
             <div class="D2">D</div>
             <div class="R2">R</div>
             <div class="E2">E</div>

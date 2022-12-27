@@ -23,19 +23,6 @@
 </template>
 
 <script>
-    // import english from "/src/multilanguage/english.json";
-    // import spanish from "/src/multilanguage/spanish.json";
-    // import catalan from "/src/multilanguage/catalan.json";
-
-    // export default {
-    //     data() {
-    //         return {
-    //             multiEnglish: english,
-    //             multiSpanish: spanish,
-    //             multiCatalan: catalan
-    //         }
-    //     }
-    // }
 </script>
 
 <style scoped>
