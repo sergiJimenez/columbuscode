@@ -1,11 +1,13 @@
 <template>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="mainColumbusTitle" id="theBeggining">
-        <div class="divContact" ref="contactButton">
-            <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
-        </div>
+        <scrollParallax>
+            <div class="divContact" ref="contactButton">
+                <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
+            </div>
+        </scrollParallax>
         <div class="divImage" ref="imageLogo">
-            <img class="imageLogo" src="../assets/logo/white.png" alt="Columbus logotype">
+            <img class="imageLogo" src="../../assets/logo/white.png" alt="Columbus logotype">
         </div>
         <div class="divAnimation">
             <p class="scrollDown" ref="scrollDownText" alt="Scroll down">Scroll down</p>
@@ -18,27 +20,33 @@
 </template>
 
 <script>
+    import scrollParallax from './../scrollParallax.vue';
+    export default {
+        components: {
+            scrollParallax
+        }
+    };
 </script>
 
 <style scoped>
     /*Font families*/
     @font-face {
         font-family: 'Adamas';
-        src: local('Adamas'), url('../fonts/Adamas-Regular.otf') format('opentype');
+        src: local('Adamas'), url('../../fonts/Adamas-Regular.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
 
     @font-face {
         font-family: 'SF-Pro-Ultralight';
-        src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+        src: local('SF-Pro-Ultralight'), url('../../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
 
     @font-face {
         font-family: 'SF-Pro-UltralightItalic';
-        src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
+        src: local('SF-Pro-Ultralight'), url('../../fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
