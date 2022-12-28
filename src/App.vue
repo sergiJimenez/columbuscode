@@ -1,12 +1,12 @@
 <template>
     <!-- Regular and responsive components -->
-    <!-- <section><columbusTitle/></section>
+    <section><columbusTitle/></section>
     <section><whoamiLayout/></section>
     <section><projectsLayout/></section>
-    <section><contactMeLayout/></section> -->
+    <section><contactMeLayout/></section>
 
     <!-- Parallax components -->
-    <section><columbusTitleParallax/></section>
+    <!-- <section><columbusTitleParallax/></section> -->
     <!-- <section><whoamiLayoutParallax/></section> -->
     <!-- <section><projectsLayoutParallax/></section> -->
     <!-- <section><contactMeLayoutParallax/></section> -->
@@ -14,13 +14,13 @@
 
 <script>
   //Regular and responsive components
-  // import columbusTitle from './components/columbusTitle.vue'
-  // import whoamiLayout from './components/whoamiLayout.vue'
-  // import projectsLayout from './components/projectsLayout.vue'
-  // import contactMeLayout from './components/contactMeLayout.vue'
+  import columbusTitle from './components/columbusTitle.vue'
+  import whoamiLayout from './components/whoamiLayout.vue'
+  import projectsLayout from './components/projectsLayout.vue'
+  import contactMeLayout from './components/contactMeLayout.vue'
 
   //Parallax components
-  import columbusTitleParallax from './components/scrollParallax/columbusTitle.vue'
+  // import columbusTitleParallax from './components/scrollParallax/columbusTitle.vue'
   // import whoamiLayoutParallax from './components/scrollParallax/whoamiLayout.vue'
   // import projectsLayoutParallax from './components/scrollParallax/projectsLayout.vue'
   // import contactMeLayoutParallax from './components/scrollParallax/contactMeLayout.vue'
@@ -30,13 +30,13 @@
     name: 'App',
     components: {
       //Regular and responsive components
-      // columbusTitle,
-      // whoamiLayout,
-      // projectsLayout,
-      // contactMeLayout,
+      columbusTitle,
+      whoamiLayout,
+      projectsLayout,
+      contactMeLayout,
 
       //Parallax components
-      columbusTitleParallax,
+      // columbusTitleParallax,
       // whoamiLayoutParallax,
       // projectsLayoutParallax,
       // contactMeLayoutParallax
