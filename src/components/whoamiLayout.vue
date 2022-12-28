@@ -27,7 +27,7 @@
         <div class="contentInformationWhoIAm" alt="Hello there! I'm a web developer based in Barcelona focused on coding people's dreams. Working with technologies like VueJS and ReactJS, researching and implementing the new ones. Aficionated to create video games in Unity with a huge story behind them but always prioritizing my second passion, the acoustic area.">
             Hello there user!<br>
             I'm a web developer based in Barcelona focused on coding people's dreams.<br>
-            Working with technologies like VueJS and ReactJS, researching and implementing the new ones. Aficionated to create video games in Unity with a huge story behind them but always prioritizing my second passion, the acoustic area.
+            Working with technologies like VueJS and ReactJS, researching and implementing the new ones. Aficionated to create video games in Unity with a huge story behind them but always prioritizing my second passion, the audio engineering.
         </div>
     </div>
 </template>

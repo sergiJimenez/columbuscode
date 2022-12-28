@@ -23,9 +23,9 @@
                 <!-- <div class="circleProjects2">
                     <img class="">
                 </div> -->
-                <div class="titleProject2" alt="Gurmann's Adventure">
+                <router-link to="/gurmannAdventures" class="titleProject2" alt="Gurmann's Adventure">
                     Gurmann's Adventure
-                </div>
+                </router-link>
             </div>
             <div class="project3">
                 <div class="titleProject3">
@@ -149,30 +149,19 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        transition: 650ms;
     }
 
-    /* .circleProjects1 {
-        position: absolute;
-        width:345px;
-        height:345px;
-        margin-top: 480px;
-        margin-left: 295px;
-        border-radius:200px;
-    } */
-
-    /* .gameImage {
-
-    } */
-
     .titleProject1 {
+        display: flex;
         font-family: "SF-Pro-Ultralight";
         font-size: 2.35vw;
-        display: flex;
         width: 100%;
         text-align: center;
         justify-content: center;
         margin-top: 2%;
         letter-spacing: -2px;
+        transition: 650ms;
     }
 
     .project2 {
@@ -181,16 +170,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        transition: 650ms;
     }
-    
-    /* .circleProjects2 {
-        position: absolute;
-        width:345px;
-        height:345px;
-        margin-top: 480px;
-        margin-left: 1280px;
-        border-radius:200px;
-    } */
 
     .titleProject2 {
         font-family: "SF-Pro-Ultralight";
@@ -201,6 +182,7 @@
         justify-content: center;
         margin-top: 2%;
         letter-spacing: -2px;
+        transition: 650ms;
     }
 
     .project3 {
@@ -209,6 +191,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        transition: 650ms;
     }
 
     .titleProject3 {
@@ -220,6 +203,7 @@
         justify-content: center;
         margin-top: 2%;
         letter-spacing: -2px;
+        transition: 650ms;
     }
 
     .P:hover, .R:hover, .O:hover, .J:hover, .E:hover, .C:hover, .T:hover, .S:hover {
@@ -229,26 +213,78 @@
     /*Responsive conditions*/
     /*Mobiles sizes S, M and L. Since 280px to 426px*/
     @media (min-width: 280px) and (max-width: 426px) {
+        .contentProjects {
+            flex-direction: column;
+        }
 
+        .titleProject1 {
+            font-size: 10.35vw;
+        }
+
+        .titleProject2 {
+            font-size: 10.35vw;
+        }
+
+        .titleProject3 {
+            font-size: 10.35vw;
+        }
     }
 
     /*Standard tablet's. Since 427px to 768px*/
     @media (min-width: 427px) and (max-width: 768px) {
+        .contentProjects {
+            flex-direction: column;
+        }
 
+        .titleProject1 {
+            font-size: 5.35vw;
+        }
+
+        .titleProject2 {
+            font-size: 5.35vw;
+        }
+
+        .titleProject3 {
+            font-size: 5.35vw;
+        }
     }
 
     /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
+        .contentProjects {
+            flex-direction: column;
+        }
+        
+        .titleProject1 {
+            font-size: 5.35vw;
+        }
 
+        .titleProject2 {
+            font-size: 5.35vw;
+        }
+
+        .titleProject3 {
+            font-size: 5.35vw;
+        }
     }
 
     /*Standard laptop's/screen's. Since 1025px to 1440px*/
     @media (min-width: 1025px) and (max-width: 1440px) {
+        .titleProject1 {
+            font-size: 2.85vw;
+        }
 
+        .titleProject2 {
+            font-size: 2.85vw;
+        }
+
+        .titleProject3 {
+            font-size: 2.85vw;
+        }
     }
 
     /*Big laptop's/screen's. Since 1441px to 2560px*/
-    @media (min-width: 1441px) and (max-width: 2560px) {
+    /* @media (min-width: 1441px) and (max-width: 2560px) {
         
-    }
+    } */
 </style>

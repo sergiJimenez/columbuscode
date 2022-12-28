@@ -1,6 +1,6 @@
 <template>
     <h1>
-        WhereToEatIn
+        GURMANN
     </h1>
 </template>
 <script>
