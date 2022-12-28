@@ -1,21 +1,29 @@
 <template>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="mainColumbusTitle" id="theBeggining">
-        <scrollParallax>
+        <scrollParallax :speed="0.4" :up="true" direction="y">
+            <div class="divAnimation">
+                <p class="scrollDown sequence fadeInScrollDown" ref="scrollDownText" alt="Scroll down">
+                    Scroll down
+                </p>
+                <div class="lineCircleDiv" ref="animationLineCircle">
+                    <div class="verticalLine sequence fadeInVerticalLine" alt="Vertical line"></div>
+                    <div class="circle sequence fadeInCircle" alt="Circle"></div>
+                </div>
+            </div>
+        </scrollParallax>
+
+        <!-- <scrollParallax>
             <div class="divContact" ref="contactButton">
                 <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
             </div>
-        </scrollParallax>
-        <div class="divImage" ref="imageLogo">
-            <img class="imageLogo" src="../../assets/logo/white.png" alt="Columbus logotype">
-        </div>
-        <div class="divAnimation">
-            <p class="scrollDown" ref="scrollDownText" alt="Scroll down">Scroll down</p>
-            <div class="lineCircleDiv" ref="animationLineCircle">
-                <div class="verticalLine" alt="Vertical line"></div>
-                <!-- <div class="circle" alt="Circle"></div> -->
+        </scrollParallax> -->
+
+        <!-- <scrollParallax>
+            <div class="divImage" ref="imageLogo">
+                <img class="imageLogo" src="../../assets/logo/white.png" alt="Columbus logotype">
             </div>
-        </div>
+        </scrollParallax> -->
     </div>
 </template>
 
@@ -54,13 +62,15 @@
     /*Main conditions to the maximum resolution*/
     .mainColumbusTitle {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: column; */
         width: 100vw;
         height: 100vh;
         background-color: #111111;
     }
 
-    .divContact {
+    /* .divContact {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -73,7 +83,7 @@
         letter-spacing: -2px;
         text-decoration: none;
         transition: clip-path 1000ms ease;
-        transition: 650ms; /* Resize */
+        transition: 650ms;
         margin-top: 2.56%;
     }
 
@@ -101,13 +111,13 @@
 
     .imageLogo {
         width: 14.8%;
-        transition: 650ms; /* Resize */
+        transition: 650ms;
         transition: transform 2.5s;
     }
 
     .imageLogo:hover {
         transform: scale(1.5);
-    }
+    } */
 
     .divAnimation {
         display: flex;
@@ -116,7 +126,7 @@
         align-items: center;
     }
 
-    .scrollDown{
+    .scrollDown {
         color: #FFFFFF;
         font-family: "SF-Pro-Ultralight";
         font-size: 2.35vw;
@@ -143,8 +153,70 @@
         width: 16px;
         height: 16px;
         border-radius: 50px;
-        animation: moveDown 6s ease-in-out alternate infinite;
+        /* animation: moveDown 6s ease-in-out alternate infinite; */
         transition: 650ms; /* Resize */
+    }
+
+    /* Fade's in */
+    /* Scroll down */
+    .scrollDown {
+        animation-duration: 2s;
+        animation-delay: 0.25s;
+        animation-fill-mode: both;
+    }
+
+    .fadeInScrollDown {
+        animation-name: fadeInScrollDown;
+    }
+    
+    @keyframes fadeInScrollDown {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Line */
+    .verticalLine {
+        animation-duration: 2s;
+        animation-delay: 2.25s;
+        animation-fill-mode: both;
+    }
+
+    .fadeInVerticalLine {
+        animation-name: fadeInVerticalLine;
+    }
+    
+    @keyframes fadeInVerticalLine {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Circle */
+    .circle {
+        animation-duration: 2s;
+        animation-delay: 3.25s;
+        animation-fill-mode: both;
+    }
+
+    .fadeInCircle {
+        animation-name: fadeInCircle;
+    }
+    
+    @keyframes fadeInCircle {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
     /*Circle animation*/
