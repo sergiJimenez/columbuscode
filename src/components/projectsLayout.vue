@@ -17,9 +17,6 @@
                 </div>
             </div>
             <div class="project2">
-                <!-- <router-link to="/gurmannAdventures" class="titleProject2" alt="Gurmann's Adventure">
-                    Gurmann's Adventure
-                </router-link> -->
                 <div class="titleProject2" alt="Gurmann's Adventure">
                     Gurmann's Adventure
                 </div>
