@@ -12,17 +12,11 @@
         </div>
         <div class="contentProjects">
             <div class="project1">
-                <!-- <div class="circleProjects1">
-                    <img class="gameImage" src="../assets/projects/gameCircle.png" alt="Game image">
-                </div> -->
                 <div class="titleProject1" alt="Falcon Project">
                     Falcon Project
                 </div>
             </div>
             <div class="project2">
-                <!-- <div class="circleProjects2">
-                    <img class="">
-                </div> -->
                 <!-- <router-link to="/gurmannAdventures" class="titleProject2" alt="Gurmann's Adventure">
                     Gurmann's Adventure
                 </router-link> -->
