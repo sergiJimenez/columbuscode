@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+// import { createRouter, createWebHashHistory } from 'vue-router'
 
 import FalconProject from '../views/falconProject.vue'
 import GurmannAdventures from '../views/gurmannAdventures.vue'
