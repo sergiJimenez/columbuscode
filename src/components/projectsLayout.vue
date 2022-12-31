@@ -23,13 +23,16 @@
                 <!-- <div class="circleProjects2">
                     <img class="">
                 </div> -->
-                <router-link to="/gurmannAdventures" class="titleProject2" alt="Gurmann's Adventure">
+                <!-- <router-link to="/gurmannAdventures" class="titleProject2" alt="Gurmann's Adventure">
                     Gurmann's Adventure
-                </router-link>
+                </router-link> -->
+                <div class="titleProject2" alt="Gurmann's Adventure">
+                    Gurmann's Adventure
+                </div>
             </div>
             <div class="project3">
                 <div class="titleProject3">
-                    WhereToEatIn
+                    Where To Eat In
                 </div>
             </div>
         </div>
