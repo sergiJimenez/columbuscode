@@ -2,18 +2,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="contactMeLayout">
         <div class="titleDiv">
-            <div v-for="contactData in contactDatas" :key="contactData.titleAPI" class="contactMeText" id="theEnd" alt="Contact me">
-                {{ contactData.titleAPI }}
+            <div class="contactMeText" id="theEnd" alt="Contact me">
+                Contact me
             </div>
         </div>
         <div>
             <form class="formDiv" action="https://formsubmit.co/acasualcolumbus@gmail.com" method="POST">
-            <!-- Name --> <input v-for="contactData in contactDatas" :key="contactData.nameAPI" class="firstNameBox" v-model="nameAPI" :placeholder="contactData.nameAPI" alt="First name" type="text" name="name" required/>
-            <!-- Email --> <input v-for="contactData in contactDatas" :key="contactData.emailAPI" class="emailBox" v-model="emailAPI" :placeholder="contactData.emailAPI" alt="E-mail" type="text" name="email" required/>
-            <!-- Explaining --> <textarea v-for="contactData in contactDatas" :key="contactData.explainAPI" class="explainBox" v-model="explainAPI" :placeholder="contactData.explainAPI" alt="Explain me about your dreams..." type="textarea" rows="4" name="message" required></textarea>
+            <!-- Name --> <input class="firstNameBox" placeholder="Name" alt="First name" type="text" name="name" required/>
+            <!-- Email --> <input class="emailBox" placeholder="E-mail" alt="E-mail" type="text" name="email" required/>
+            <!-- Explaining --> <textarea class="explainBox" placeholder="Explain me about your dreams..." alt="Explain me about your dreams..." type="textarea" rows="4" name="message" required></textarea>
             <div class="sendButtonDiv"> <!-- Submit Button --> 
-                <button v-for="contactData in contactDatas" :key="contactData.sendButtonAPI" class="sendButton" alt="Send" type="submit">
-                    {{ contactData.sendButtonAPI }}
+                <button class="sendButton" alt="Send" type="submit">
+                    Send
                 </button>
             </div> <!-- Let this <div> alone because the <p> has an error with padding and margin's -->
             <!-- This is a "Thank You page that we have to programming after. "<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"/> -->
@@ -21,24 +21,24 @@
         </div>
         <div class="bottomDiv">
             <div class="cityAndTime">
-                <a href="https://www.google.es/maps/place/Barcelona/data=!4m2!3m1!1s0x12a49816718e30e5:0x44b0fb3d4f47660a?sa=X&ved=2ahUKEwjOjdzwto78AhWSTKQEHUNsACAQ8gF6BAgPEAE" class="gettingTime" v-for="contactData in contactDatas" :key="contactData.locationAPI" target="_blank" alt="Barcelona, ES">
-                    {{ contactData.locationAPI }}
+                <a href="https://www.google.es/maps/place/Barcelona/data=!4m2!3m1!1s0x12a49816718e30e5:0x44b0fb3d4f47660a?sa=X&ved=2ahUKEwjOjdzwto78AhWSTKQEHUNsACAQ8gF6BAgPEAE" class="gettingTime" target="_blank" alt="Barcelona, ES">
+                    Barcelona, ES
                 </a>
                 <div class="hourLocal">
                     {{ timestamp }}
                 </div>
             </div>
             <div class="authorDiv">
-                <div class="designContact" v-for="contactData in contactDatas" :key="contactData.designByAPI" alt="Design by">
-                    {{ contactData.designByAPI }}
-                    <a v-for="contactData in contactDatas" :key="contactData.byContactAPI" class="byContact" alt="Sergi Jiménez" href="#theBeggining">
-                        {{ contactData.byContactAPI }}
+                <div class="designContact" alt="Design by">
+                    Design by 
+                    <a class="byContact" alt="Sergi Jiménez" href="#theBeggining">
+                        Sergi Jiménez
                     </a>
                 </div>
             </div>
         </div>
         <div class="githubDiv">
-            <a class="github" v-for="contactData in contactDatas" :key="contactData.designByAPI" :href="contactData.linkGitHubAPI" target="_blank" alt="GitHub">
+            <a class="github" href="https://github.com/sergiJimenez" target="_blank" alt="GitHub">
                 GitHub
             </a>
         </div>
@@ -46,12 +46,9 @@
 </template>
 
 <script>
-    import urlData from "/src/multilanguage/contactMe.json";
-
     export default {
         data() {
             return {
-                contactDatas: urlData,
                 timestamp: ""
             }
         },

@@ -1,7 +1,7 @@
 //ROUTER Version 
 import { createApp } from 'vue'
 import App from './App.vue'
-import { createRouter, createMemoryHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 //Components:
 import Gurmann from '../src/views/gurmannAdventures.vue'
@@ -19,7 +19,7 @@ const routes = [
 
 //Routes Objects:
 const router = createRouter({
-    history: createMemoryHistory(),
+    history: createWebHashHistory(),
     routes
 })
 
