@@ -1,7 +1,7 @@
 <template>
     <div class="gurmannView">
         <section class="portfolio-experiment">
-            <div class="experiment-title">  <!-- Hay que cambiar el div a un "a" o un "button" para que haga también de boton de regreso al portfolio -->
+            <div class="experiment-title sequence fadeInBottom">  <!-- Hay que cambiar el div a un "a" o un "button" para que haga también de boton de regreso al portfolio -->
                 Coming soon
             </div>
         </section>
@@ -29,6 +29,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        animation: fadeIn 2.5s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     .portfolio-experiment .experiment-title {
