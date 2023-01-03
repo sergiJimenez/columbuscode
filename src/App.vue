@@ -4,6 +4,7 @@
     <section><whoamiLayout/></section>
     <section><projectsLayout/></section>
     <section><contactMeLayout/></section>
+    <section><gurmann/></section>
 
     <!-- Parallax components -->
     <!-- <section><columbusTitleParallax/></section> -->
@@ -18,6 +19,7 @@
   import whoamiLayout from './components/whoamiLayout.vue'
   import projectsLayout from './components/projectsLayout.vue'
   import contactMeLayout from './components/contactMeLayout.vue'
+  import gurmann from './views/gurmannAdventures.vue'
 
   //Parallax components
   // import columbusTitleParallax from './components/scrollParallax/columbusTitle.vue'
@@ -34,6 +36,7 @@
       whoamiLayout,
       projectsLayout,
       contactMeLayout,
+      gurmann
 
       //Parallax components
       // columbusTitleParallax,

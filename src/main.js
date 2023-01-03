@@ -1,26 +1,31 @@
 //ROUTER Version 
 import { createApp } from 'vue'
-import App from './App.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
-
-//Components:
-import Gurmann from '../src/views/gurmannAdventures.vue'
-import WhereToEatIn from '../src/views/whereToEatIn.vue'
+import App from './App.vue'
 
 //Routes:
 const routes = [
     {
-        path:'/gurmann', component: Gurmann
+        path:'/falcon',
+        name: 'falconProject',
+        component: () => import('../src/views/falconProject.vue')
     },
     {
-        path:'/wheretoeatin', component: WhereToEatIn,
+        path:'/gurmann',
+        name: 'gurmann',
+        component: () => import('../src/views/gurmannAdventures.vue')
+    },
+    {
+        path:'/wheretoeatin',
+        name: "wheretoeatin",
+        component: () => import('../src/views/whereToEatIn.vue')
     }
 ]
 
 //Routes Objects:
 const router = createRouter({
     history: createWebHashHistory(),
-    routes
+    routes,
 })
 
 //Vue Instance
@@ -28,13 +33,3 @@ const app = createApp(App)
 
 app.use(router)
 app.mount('#app')
-
-
-
-
-//Default Version
-// import { createApp } from 'vue'
-// import App from './App.vue'
-// import router from './router'
-
-// createApp(App).use(router).mount('#app')

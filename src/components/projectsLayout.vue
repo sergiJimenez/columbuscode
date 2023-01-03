@@ -17,14 +17,14 @@
                 </div>
             </div>
             <div class="project2">
-                <div class="titleProject2" alt="Gurmann's Adventure">
+                <router-link :to= "{ name: 'gurmann' }" class="titleProject2" alt="Gurmann's Adventure">
                     Gurmann's Adventure
-                </div>
+                </router-link>
             </div>
             <div class="project3">
-                <div class="titleProject3">
+                <router-link :to= "{ name: 'wheretoeatin' }" class="titleProject3">
                     Where To Eat In
-                </div>
+                </router-link>
             </div>
         </div>
     </div>
