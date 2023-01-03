@@ -9,10 +9,10 @@
         </div>
         <div class="divAnimation">
             <p class="scrollDown" ref="scrollDownText" alt="Scroll down">Scroll down</p>
-            <div class="lineCircleDiv" ref="animationLineCircle">
+            <!-- <div class="lineCircleDiv" ref="animationLineCircle">
                 <div class="verticalLine" alt="Vertical line"></div>
-                <!-- <div class="circle" alt="Circle"></div> -->
-            </div>
+                <div class="circle" alt="Circle"></div>
+            </div> -->
         </div>
     </div>
 </template>
