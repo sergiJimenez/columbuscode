@@ -1,10 +1,4 @@
 <template>
-    <!-- Regular and responsive components -->
-    <!-- <columbusTitle/>
-    <whoamiLayout/>
-    <projectsLayout/>
-    <contactMeLayout/> -->
-
     <!-- Try scroll and fade in -->
     <section class="columbusTitle"><columbusTitle/></section>
     <section class="tag whoamiLayout"><whoamiLayout/></section>
