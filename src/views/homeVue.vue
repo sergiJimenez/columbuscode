@@ -14,10 +14,10 @@
 
 <script setup>
   //Regular and responsive components
-  import columbusTitle from '../components/columbusTitle.vue'
-  import whoamiLayout from '../components/whoamiLayout.vue'
-  import projectsLayout from '../components/projectsLayout.vue'
-  import contactMeLayout from '../components/contactMeLayout.vue'
+  import columbusTitle from '../components/componentsHome/columbusTitle.vue'
+  import whoamiLayout from '../components/componentsHome/whoamiLayout.vue'
+  import projectsLayout from '../components/componentsHome/projectsLayout.vue'
+  import contactMeLayout from '../components/componentsHome/contactMeLayout.vue'
 
   //Parallax components
   // import columbusTitleParallax from '../components/scrollParallax/columbusTitle.vue'

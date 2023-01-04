@@ -28,7 +28,7 @@
 </template>
 
 <script>
-    import scrollParallax from './../scrollParallax.vue';
+    import scrollParallax from '../scrollParallax.vue';
     export default {
         components: {
             scrollParallax

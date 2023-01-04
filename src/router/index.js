@@ -9,15 +9,15 @@ const router = createRouter({
     },
     {
       path: '/falcon',
-      component: () => import('../views/falconProject.vue')
+      component: () => import('../views/links/falconProject.vue')
     },
     {
       path: '/gurmann',
-      component: () => import('../views/gurmannAdventures.vue')
+      component: () => import('../views/links/gurmannAdventures.vue')
     },
     {
       path: '/whereToEatIn',
-      component: () => import('../views/whereToEatIn.vue')
+      component: () => import('../views/links/whereToEatIn.vue')
     },
   ]
 })
