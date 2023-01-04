@@ -1,7 +1,7 @@
 <template>
     <div class="gurmannView">
         <section class="comingSoon sequence fadeIn">
-            <router-link to="/" class="textClass sequence glitch">  <!-- Hay que cambiar el div a un "a" o un "button" para que haga también de boton de regreso al portfolio -->
+            <router-link to="/" class="textClass sequence glitch">
                 Coming soon
             </router-link>
         </section>

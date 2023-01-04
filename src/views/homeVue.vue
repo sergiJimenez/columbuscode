@@ -1,5 +1,5 @@
 <template>
-    <!-- Try scroll and fade in -->
+    <!-- Regular components -->
     <section class="columbusTitle"><columbusTitle/></section>
     <section class="tag whoamiLayout"><whoamiLayout/></section>
     <section class="tag projectsLayout"><projectsLayout/></section>
