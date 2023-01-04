@@ -50,6 +50,16 @@
         width: 100vw;
         height: 100vh;
         background-color: #111111;
+        animation: fadeIn 2s;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
     .divContact {
