@@ -27,13 +27,13 @@
     </div>
 </template>
 
-<script>
+<script setup>
     import scrollParallax from '../scrollParallax.vue';
-    export default {
-        components: {
-            scrollParallax
-        }
-    };
+    // export default {
+    //     components: {
+    //         scrollParallax
+    //     }
+    // };
 </script>
 
 <style scoped>

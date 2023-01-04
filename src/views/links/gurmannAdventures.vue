@@ -1,7 +1,7 @@
 <template>
     <div class="gurmannView">
-        <section class="portfolio-experiment sequence fadeIn">
-            <router-link to="/" class="experiment-title sequence glitch">  <!-- Hay que cambiar el div a un "a" o un "button" para que haga también de boton de regreso al portfolio -->
+        <section class="comingSoon sequence fadeIn">
+            <router-link to="/" class="textClass sequence glitch">  <!-- Hay que cambiar el div a un "a" o un "button" para que haga también de boton de regreso al portfolio -->
                 Coming soon
             </router-link>
         </section>
@@ -9,13 +9,15 @@
 </template>
 
 <style>
+    /*Font families*/
     @font-face {
         font-family: 'SF-Pro-Ultralight';
-        src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+        src: local('SF-Pro-Ultralight'), url('../../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
 
+    /*Main conditions to the maximum resolution*/
     .gurmannView {
         width: 100vw;
         height: 100vh;
@@ -23,28 +25,29 @@
         color: #FFFFFF;
     }
 
-    .portfolio-experiment {
+    .comingSoon {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 650ms; /* Resize */
         animation: fadeIn 2.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
     }
 
-    .portfolio-experiment .experiment-title {
+    .textClass {
+        display: inline-block;
         color: inherit;
         text-decoration: none;
         outline: none;
         font-size: 5.35vw;
         font-family: "SF-Pro-Ultralight", monospace;
-    }
-
-    .portfolio-experiment .experiment-title, .portfolio-experiment .experiment-title * {
         animation: glitch 5s infinite steps(50);
-        display: inline-block;
     }
 
+    /*Animations*/
     @keyframes glitch {
         2% {
             font-weight: 400;
@@ -343,10 +346,10 @@
     }
 
     @keyframes fadeIn {
-        0% {
+        from {
             opacity: 0;
         }
-        100% {
+        to {
             opacity: 1;
         }
     }
@@ -354,28 +357,28 @@
     /*Responsive conditions*/
     /*Mobiles sizes S, M and L. Since 280px to 426px*/
     @media (min-width: 280px) and (max-width: 426px) {
-        .portfolio-experiment .experiment-title {
+        .textClass {
             font-size: 10.35vw;
         }
     }
 
     /*Standard tablet's. Since 427px to 768px*/
     @media (min-width: 427px) and (max-width: 768px) {
-        .portfolio-experiment .experiment-title {
+        .textClass {
             font-size: 7.35vw;
         }
     }
 
     /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
-        .portfolio-experiment .experiment-title {
+        .textClass {
             font-size: 6.75vw;
         }
     }
 
     /*Standard laptop's/screen's. Since 1025px to 1440px*/
     @media (min-width: 1025px) and (max-width: 1440px) {
-        .portfolio-experiment .experiment-title {
+        .textClass {
             font-size: 5.35vw;
         }
     }
