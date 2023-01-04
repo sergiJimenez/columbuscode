@@ -213,8 +213,45 @@
     /*Responsive conditions*/
     /*Mobiles sizes S, M and L. Since 280px to 426px*/
     @media (min-width: 280px) and (max-width: 426px) {
+        .titleProjects {
+            margin-top: 10%;
+        }
+        
+        .P {
+            font-size: 16vw;
+        }
+
+        .R {
+            font-size: 16vw;
+        }
+
+        .O {
+            font-size: 16vw;
+        }
+
+        .J {
+            font-size: 16vw;
+        }
+
+        .E {
+            font-size: 16vw;
+        }
+
+        .C {
+            font-size: 16vw;
+        }
+
+        .T {
+            font-size: 16vw;
+        }
+
+        .S {
+            font-size: 16vw;
+        }
+        
         .contentProjects {
             flex-direction: column;
+            gap: 5vh;
         }
 
         .titleProject1 {
@@ -232,8 +269,45 @@
 
     /*Standard tablet's. Since 427px to 768px*/
     @media (min-width: 427px) and (max-width: 768px) {
+        .titleProjects {
+            margin-top: 10%;
+        }
+        
+        .P {
+            font-size: 16vw;
+        }
+
+        .R {
+            font-size: 16vw;
+        }
+
+        .O {
+            font-size: 16vw;
+        }
+
+        .J {
+            font-size: 16vw;
+        }
+
+        .E {
+            font-size: 16vw;
+        }
+
+        .C {
+            font-size: 16vw;
+        }
+
+        .T {
+            font-size: 16vw;
+        }
+
+        .S {
+            font-size: 16vw;
+        }
+        
         .contentProjects {
             flex-direction: column;
+            gap: 4vh;
         }
 
         .titleProject1 {
@@ -251,8 +325,45 @@
 
     /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
+        .titleProjects {
+            margin-top: 10%;
+        }
+        
+        .P {
+            font-size: 16vw;
+        }
+
+        .R {
+            font-size: 16vw;
+        }
+
+        .O {
+            font-size: 16vw;
+        }
+
+        .J {
+            font-size: 16vw;
+        }
+
+        .E {
+            font-size: 16vw;
+        }
+
+        .C {
+            font-size: 16vw;
+        }
+
+        .T {
+            font-size: 16vw;
+        }
+
+        .S {
+            font-size: 16vw;
+        }
+        
         .contentProjects {
             flex-direction: column;
+            gap: 3.5vh;
         }
         
         .titleProject1 {
