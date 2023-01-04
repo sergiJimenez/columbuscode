@@ -69,7 +69,8 @@
     }
 
     .contactMe {
-        color: #FF0000;
+        /* color: #FF0000; */
+        color: #111111;
         font-family: "SF-Pro-Ultralight";
         font-size: 2.35vw;
         letter-spacing: -2px;
@@ -86,7 +87,8 @@
     .contactMe::before {
         position: absolute;
         content: attr(alt);
-        color: #FFFFFF;
+        /* color: #FFFFFF; */
+        color: #111111;
         text-decoration: line-through;
         text-decoration-thickness: 1px;
         letter-spacing: -2px;

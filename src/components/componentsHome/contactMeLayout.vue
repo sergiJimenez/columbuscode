@@ -11,7 +11,7 @@
             <!-- Name --> <input class="firstNameBox" placeholder="Name" alt="First name" type="text" name="name" required/>
             <!-- Email --> <input class="emailBox" placeholder="E-mail" alt="E-mail" type="text" name="email" required/>
             <!-- Explaining --> <textarea class="explainBox" placeholder="Explain me about your dreams..." alt="Explain me about your dreams..." type="textarea" rows="4" name="message" required></textarea>
-            <div class="sendButtonDiv"> <!-- Submit Button --> 
+            <div class="sendButtonDiv"> <!-- Submit Button -->
                 <button class="sendButton" alt="Send" type="submit">
                     Send
                 </button>
@@ -31,7 +31,10 @@
             <div class="authorDiv">
                 <div class="designContact" alt="Design by">
                     Design by 
-                    <a class="byContact" alt="Sergi Jiménez" href="#theBeggining">
+                    <!-- <a class="byContact" alt="Sergi Jiménez" href="#theBeggining">
+                        Sergi Jiménez
+                    </a> -->
+                    <a class="byContact" alt="Sergi Jiménez">
                         Sergi Jiménez
                     </a>
                 </div>

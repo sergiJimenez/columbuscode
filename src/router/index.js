@@ -18,7 +18,7 @@ const router = createRouter({
     {
       path: '/whereToEatIn',
       component: () => import('../views/links/whereToEatIn.vue')
-    },
+    }
   ]
 })
 
