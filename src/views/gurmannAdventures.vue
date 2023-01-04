@@ -1,9 +1,9 @@
 <template>
     <div class="gurmannView">
-        <section class="portfolio-experiment">
-            <div class="experiment-title sequence fadeInBottom">  <!-- Hay que cambiar el div a un "a" o un "button" para que haga también de boton de regreso al portfolio -->
+        <section class="portfolio-experiment sequence fadeIn">
+            <router-link to="/" class="experiment-title sequence glitch">  <!-- Hay que cambiar el div a un "a" o un "button" para que haga también de boton de regreso al portfolio -->
                 Coming soon
-            </div>
+            </router-link>
         </section>
     </div>
 </template>
@@ -32,16 +32,9 @@
         animation: fadeIn 2.5s;
     }
 
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
     .portfolio-experiment .experiment-title {
+        color: inherit;
+        text-decoration: none;
         outline: none;
         font-size: 5.35vw;
         font-family: "SF-Pro-Ultralight", monospace;
@@ -346,6 +339,15 @@
             font-style: normal;
             text-decoration: none;
             text-transform: uppercase;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
         }
     }
 

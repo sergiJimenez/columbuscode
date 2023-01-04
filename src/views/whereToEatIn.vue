@@ -1,9 +1,9 @@
 <template>
     <div class="whereToEatInView">
         <section class="portfolio-experiment">
-            <div class="experiment-title">  <!-- Hay que cambiar el div a un "a" o un "button" para que haga también de boton de regreso al portfolio -->
+            <router-link to="/" class="experiment-title">  <!-- Hay que cambiar el div a un "a" o un "button" para que haga también de boton de regreso al portfolio -->
                 Coming soon
-            </div>
+            </router-link>
         </section>
     </div>
 </template>
@@ -42,6 +42,8 @@
     }
 
     .portfolio-experiment .experiment-title {
+        color: inherit;
+        text-decoration: none;
         outline: none;
         font-size: 5.35vw;
         font-family: "SF-Pro-Ultralight", monospace;

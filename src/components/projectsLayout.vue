@@ -12,17 +12,17 @@
         </div>
         <div class="contentProjects">
             <div class="project1">
-                <div class="titleProject1" alt="Falcon Project">
-                    Falcon Project
-                </div>
+                <router-link to="/falcon" class="titleProject1" alt="Falcon Project">
+                    Falcon
+                </router-link>
             </div>
             <div class="project2">
-                <router-link :to= "{ name: 'gurmann' }" class="titleProject2" alt="Gurmann's Adventure">
+                <router-link to="/gurmann" class="titleProject2" alt="Gurmann's Adventure">
                     Gurmann's Adventure
                 </router-link>
             </div>
             <div class="project3">
-                <router-link :to= "{ name: 'wheretoeatin' }" class="titleProject3">
+                <router-link to="/whereToEatIn" class="titleProject3">
                     Where To Eat In
                 </router-link>
             </div>
@@ -155,6 +155,8 @@
         justify-content: center;
         margin-top: 2%;
         letter-spacing: -2px;
+        text-decoration: none;
+        color: inherit;
         transition: 650ms;
     }
 
@@ -176,6 +178,8 @@
         justify-content: center;
         margin-top: 2%;
         letter-spacing: -2px;
+        text-decoration: none;
+        color: inherit;
         transition: 650ms;
     }
 
@@ -197,6 +201,8 @@
         justify-content: center;
         margin-top: 2%;
         letter-spacing: -2px;
+        text-decoration: none;
+        color: inherit;
         transition: 650ms;
     }
 
