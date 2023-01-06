@@ -1,30 +1,16 @@
 <template>
-    <!-- Regular components -->
     <section class="columbusTitle"><columbusTitle/></section>
     <section class="tag whoamiLayout"><whoamiLayout/></section>
     <section class="tag projectsLayout"><projectsLayout/></section>
     <section class="tag contactMeLayout"><contactMeLayout/></section>
-
-    <!-- Parallax components -->
-    <!-- <columbusTitleParallax/> -->
-    <!-- <whoamiLayoutParallax/> -->
-    <!-- <projectsLayoutParallax/> -->
-    <!-- <contactMeLayoutParallax/> -->
 </template>
 
 <script>
-  //Regular and responsive components
-  import columbusTitle from '../components/componentsHome/columbusTitle.vue'
-  import whoamiLayout from '../components/componentsHome/whoamiLayout.vue'
-  import projectsLayout from '../components/componentsHome/projectsLayout.vue'
-  import contactMeLayout from '../components/componentsHome/contactMeLayout.vue'
+  import columbusTitle from '../components/columbusTitle.vue'
+  import whoamiLayout from '../components/whoamiLayout.vue'
+  import projectsLayout from '../components/projectsLayout.vue'
+  import contactMeLayout from '../components/contactMeLayout.vue'
   import $ from 'jquery'
-
-  //Parallax components
-  // import columbusTitleParallax from '../components/scrollParallax/columbusTitle.vue'
-  // import whoamiLayoutParallax from '../components/scrollParallax/whoamiLayout.vue'
-  // import projectsLayoutParallax from '../components/scrollParallax/projectsLayout.vue'
-  // import contactMeLayoutParallax from '../components/scrollParallax/contactMeLayout.vue'
 
   export default {
     components: {

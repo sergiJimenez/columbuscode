@@ -37,14 +37,14 @@
     /*Font families*/
     @font-face {
         font-family: 'Adamas';
-        src: local('Adamas'), url('../../fonts/Adamas-Regular.otf') format('opentype');
+        src: local('Adamas'), url('../fonts/Adamas-Regular.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
 
     @font-face {
         font-family: 'SF-Pro-Ultralight';
-        src: local('SF-Pro-Ultralight'), url('../../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+        src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }

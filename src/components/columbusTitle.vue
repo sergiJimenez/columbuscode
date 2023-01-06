@@ -1,60 +1,44 @@
 <template>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="mainColumbusTitle" id="theBeggining">
-        <scrollParallax :speed="0.4" :up="true" direction="y">
-            <div class="divAnimation">
-                <p class="scrollDown sequence fadeInScrollDown" ref="scrollDownText" alt="Scroll down">
-                    Scroll down
-                </p>
-                <div class="lineCircleDiv" ref="animationLineCircle">
-                    <div class="verticalLine sequence fadeInVerticalLine" alt="Vertical line"></div>
-                    <div class="circle sequence fadeInCircle" alt="Circle"></div>
-                </div>
-            </div>
-        </scrollParallax>
-
-        <!-- <scrollParallax>
-            <div class="divContact" ref="contactButton">
-                <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
-            </div>
-        </scrollParallax> -->
-
-        <!-- <scrollParallax>
-            <div class="divImage" ref="imageLogo">
-                <img class="imageLogo" src="../../assets/logo/white.png" alt="Columbus logotype">
-            </div>
-        </scrollParallax> -->
+        <div class="divContact" ref="contactButton">
+            <a href="#theEnd" class="contactMe" alt="Contact">Contact</a>
+        </div>
+        <div class="divImage" ref="imageLogo">
+            <img class="imageLogo" src="../assets/white.png" alt="Columbus logotype">
+        </div>
+        <div class="divAnimation">
+            <p class="scrollDown" ref="scrollDownText" alt="Scroll down">Scroll down</p>
+            <!-- <div class="lineCircleDiv" ref="animationLineCircle">
+                <div class="verticalLine" alt="Vertical line"></div>
+                <div class="circle" alt="Circle"></div>
+            </div> -->
+        </div>
     </div>
 </template>
 
-<script setup>
-    import scrollParallax from '../scrollParallax.vue';
-    // export default {
-    //     components: {
-    //         scrollParallax
-    //     }
-    // };
+<script>
 </script>
 
 <style scoped>
     /*Font families*/
     @font-face {
         font-family: 'Adamas';
-        src: local('Adamas'), url('../../fonts/Adamas-Regular.otf') format('opentype');
+        src: local('Adamas'), url('../fonts/Adamas-Regular.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
 
     @font-face {
         font-family: 'SF-Pro-Ultralight';
-        src: local('SF-Pro-Ultralight'), url('../../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+        src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
 
     @font-face {
         font-family: 'SF-Pro-UltralightItalic';
-        src: local('SF-Pro-Ultralight'), url('../../fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
+        src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
@@ -62,28 +46,37 @@
     /*Main conditions to the maximum resolution*/
     .mainColumbusTitle {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        /* flex-direction: column; */
+        flex-direction: column;
         width: 100vw;
         height: 100vh;
         background-color: #111111;
+        animation: fadeIn 2s;
     }
 
-    /* .divContact {
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .divContact {
         display: flex;
         align-items: center;
         justify-content: flex-end;
     }
 
     .contactMe {
-        color: #FF0000;
+        /* color: #FF0000; */
+        color: #111111;
         font-family: "SF-Pro-Ultralight";
         font-size: 2.35vw;
         letter-spacing: -2px;
         text-decoration: none;
         transition: clip-path 1000ms ease;
-        transition: 650ms;
+        transition: 650ms; /* Resize */
         margin-top: 2.56%;
     }
 
@@ -94,7 +87,8 @@
     .contactMe::before {
         position: absolute;
         content: attr(alt);
-        color: #FFFFFF;
+        /* color: #FFFFFF; */
+        color: #111111;
         text-decoration: line-through;
         text-decoration-thickness: 1px;
         letter-spacing: -2px;
@@ -111,13 +105,13 @@
 
     .imageLogo {
         width: 14.8%;
-        transition: 650ms;
+        transition: 650ms; /* Resize */
         transition: transform 2.5s;
     }
 
     .imageLogo:hover {
         transform: scale(1.5);
-    } */
+    }
 
     .divAnimation {
         display: flex;
@@ -126,7 +120,7 @@
         align-items: center;
     }
 
-    .scrollDown {
+    .scrollDown{
         color: #FFFFFF;
         font-family: "SF-Pro-Ultralight";
         font-size: 2.35vw;
@@ -153,70 +147,8 @@
         width: 16px;
         height: 16px;
         border-radius: 50px;
-        /* animation: moveDown 6s ease-in-out alternate infinite; */
+        animation: moveDown 6s ease-in-out alternate infinite;
         transition: 650ms; /* Resize */
-    }
-
-    /* Fade's in */
-    /* Scroll down */
-    .scrollDown {
-        animation-duration: 2s;
-        animation-delay: 0.25s;
-        animation-fill-mode: both;
-    }
-
-    .fadeInScrollDown {
-        animation-name: fadeInScrollDown;
-    }
-    
-    @keyframes fadeInScrollDown {
-        from {
-            opacity: 0;
-            transform: translateY(100%);
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    /* Line */
-    .verticalLine {
-        animation-duration: 2s;
-        animation-delay: 2.25s;
-        animation-fill-mode: both;
-    }
-
-    .fadeInVerticalLine {
-        animation-name: fadeInVerticalLine;
-    }
-    
-    @keyframes fadeInVerticalLine {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    /* Circle */
-    .circle {
-        animation-duration: 2s;
-        animation-delay: 3.25s;
-        animation-fill-mode: both;
-    }
-
-    .fadeInCircle {
-        animation-name: fadeInCircle;
-    }
-    
-    @keyframes fadeInCircle {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
     }
 
     /*Circle animation*/

@@ -8,15 +8,14 @@
         </div>
         <div>
             <form class="formDiv" action="https://formsubmit.co/acasualcolumbus@gmail.com" method="POST">
-            <!-- Name --> <input class="firstNameBox" placeholder="Name" alt="First name" type="text" name="name" required/>
-            <!-- Email --> <input class="emailBox" placeholder="E-mail" alt="E-mail" type="text" name="email" required/>
-            <!-- Explaining --> <textarea class="explainBox" placeholder="Explain me about your dreams..." alt="Explain me about your dreams..." type="textarea" rows="4" name="message" required></textarea>
-            <div class="sendButtonDiv"> <!-- Submit Button -->
-                <button class="sendButton" alt="Send" type="submit">
-                    Send
-                </button>
-            </div> <!-- Let this <div> alone because the <p> has an error with padding and margin's -->
-            <!-- This is a "Thank You page that we have to programming after. "<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"/> -->
+                <!-- Name --> <input class="firstNameBox" placeholder="Name" alt="First name" type="text" name="name" required/>
+                <!-- Email --> <input class="emailBox" placeholder="E-mail" alt="E-mail" type="text" name="email" required/>
+                <!-- Explaining --> <textarea class="explainBox" placeholder="Explain me about your dreams..." alt="Explain me about your dreams..." type="textarea" rows="4" name="message" required></textarea>
+                <div class="sendButtonDiv"> <!-- Submit Button -->
+                    <button class="sendButton" alt="Send" type="submit">
+                        Send
+                    </button>
+                </div>
             </form>
         </div>
         <div class="bottomDiv">
@@ -31,9 +30,6 @@
             <div class="authorDiv">
                 <div class="designContact" alt="Design by">
                     Design by 
-                    <!-- <a class="byContact" alt="Sergi Jiménez" href="#theBeggining">
-                        Sergi Jiménez
-                    </a> -->
                     <a class="byContact" alt="Sergi Jiménez">
                         Sergi Jiménez
                     </a>
@@ -76,7 +72,7 @@
     /*Font families*/
     @font-face {
         font-family: 'SF-Pro-Ultralight';
-        src: local('SF-Pro-Ultralight'), url('../../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+        src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }

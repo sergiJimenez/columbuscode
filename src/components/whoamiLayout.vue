@@ -27,7 +27,7 @@
         <div class="contentInformationWhoIAm" alt="Hello there! I'm a web developer based in Barcelona focused on coding people's dreams. Working with technologies like VueJS and ReactJS, researching and implementing the new ones. Aficionated to create video games in Unity with a huge story behind them but always prioritizing my second passion, the acoustic area.">
             Hello there user!<br>
             I'm a web developer based in Barcelona focused on coding people's dreams.<br>
-            Working with technologies like VueJS and ReactJS, researching and implementing the new ones. Aficionated to create video games in Unity with a huge story behind them but always prioritizing my second passion, the acoustic area.
+            Working with technologies like VueJS and ReactJS, researching and implementing the new ones. Aficionated to create video games in Unity with a huge story behind them but always prioritizing my second passion, the audio engineering.
         </div>
     </div>
 </template>
@@ -39,21 +39,21 @@
     /*Font families*/
     @font-face {
         font-family: 'Adamas';
-        src: local('Adamas'), url('../../fonts/Adamas-Regular.otf') format('opentype');
+        src: local('Adamas'), url('../fonts/Adamas-Regular.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
 
     @font-face {
         font-family: 'SF-Pro-Ultralight';
-        src: local('SF-Pro-Ultralight'), url('../../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+        src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
 
     @font-face {
         font-family: 'SF-Pro-UltralightItalic';
-        src: local('SF-Pro-UltralightItalic'), url('../../fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
+        src: local('SF-Pro-UltralightItalic'), url('../fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
     }
@@ -236,19 +236,174 @@
     /*Mobiles sizes S, M and L. Since 280px to 426px*/
     @media (min-width: 280px) and (max-width: 426px) {
         .whoAmILayout {
-            height: 200vh;
+            height: 175vh;
+        }
+
+        .fullstackDeveloperDiv {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .F1 {
+            font-size: 14.5vw;
+        }
+
+        .U1 {
+            font-size: 14.5vw;
+        }
+
+        .L1 {
+            font-size: 14.5vw;
+        }
+
+        .L1-1 {
+            font-size: 14.5vw;
+        }
+
+        .S1 {
+            font-size: 14.5vw;
+        }
+
+        .T1 {
+            font-size: 14.5vw;
+        }
+
+        .A1 {
+            font-size: 14.5vw;
+        }
+
+        .C1 {
+            font-size: 14.5vw;
+        }
+
+        .K1 {
+            font-size: 14.5vw;
+        }
+
+        .D2 {
+            font-size: 14.5vw;
+        }
+
+        .E2-0 {
+            font-size: 14.5vw;
+        }
+
+        .V2 {
+            font-size: 14.5vw;
+        }
+
+        .E2-1 {
+            font-size: 14.5vw;
+        }
+
+        .L2 {
+            font-size: 14.5vw;
+        }
+
+        .O2 {
+            font-size: 14.5vw;
+        }
+
+        .P2 {
+            font-size: 14.5vw;
+        }
+
+        .E2 {
+            font-size: 14.5vw;
+        }
+
+        .R2 {
+            font-size: 14.5vw;
         }
 
         .contentInformationWhoIAm {
             font-size: 10.35vw;
             width: 90%;
-            margin-top: auto;
+            /* margin-top: auto; */
             margin-bottom: 20%;
         }
     }
 
     /*Standard tablet's. Since 427px to 768px*/
     @media (min-width: 427px) and (max-width: 768px) {
+        .fullstackDeveloperDiv {
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+        }
+        
+        .F1 {
+            font-size: 14.5vw;
+        }
+
+        .U1 {
+            font-size: 14.5vw;
+        }
+
+        .L1 {
+            font-size: 14.5vw;
+        }
+
+        .L1-1 {
+            font-size: 14.5vw;
+        }
+
+        .S1 {
+            font-size: 14.5vw;
+        }
+
+        .T1 {
+            font-size: 14.5vw;
+        }
+
+        .A1 {
+            font-size: 14.5vw;
+        }
+
+        .C1 {
+            font-size: 14.5vw;
+        }
+
+        .K1 {
+            font-size: 14.5vw;
+        }
+
+        .D2 {
+            font-size: 14.5vw;
+        }
+
+        .E2-0 {
+            font-size: 14.5vw;
+        }
+
+        .V2 {
+            font-size: 14.5vw;
+        }
+
+        .E2-1 {
+            font-size: 14.5vw;
+        }
+
+        .L2 {
+            font-size: 14.5vw;
+        }
+
+        .O2 {
+            font-size: 14.5vw;
+        }
+
+        .P2 {
+            font-size: 14.5vw;
+        }
+
+        .E2 {
+            font-size: 14.5vw;
+        }
+
+        .R2 {
+            font-size: 14.5vw;
+        }
+        
         .contentInformationWhoIAm {
             font-size: 5.35vw;
             width: 90%;
@@ -259,6 +414,84 @@
 
     /*Big tablet's and small laptop's/screen's. Since 769px to 1024px*/
     @media (min-width: 769px) and (max-width: 1024px) {
+        .fullstackDeveloperDiv {
+            justify-content: center;
+            align-items: center;
+            margin-top: 12.5%;
+        }
+        
+        .F1 {
+            font-size: 14.5vw;
+        }
+
+        .U1 {
+            font-size: 14.5vw;
+        }
+
+        .L1 {
+            font-size: 14.5vw;
+        }
+
+        .L1-1 {
+            font-size: 14.5vw;
+        }
+
+        .S1 {
+            font-size: 14.5vw;
+        }
+
+        .T1 {
+            font-size: 14.5vw;
+        }
+
+        .A1 {
+            font-size: 14.5vw;
+        }
+
+        .C1 {
+            font-size: 14.5vw;
+        }
+
+        .K1 {
+            font-size: 14.5vw;
+        }
+
+        .D2 {
+            font-size: 14.5vw;
+        }
+
+        .E2-0 {
+            font-size: 14.5vw;
+        }
+
+        .V2 {
+            font-size: 14.5vw;
+        }
+
+        .E2-1 {
+            font-size: 14.5vw;
+        }
+
+        .L2 {
+            font-size: 14.5vw;
+        }
+
+        .O2 {
+            font-size: 14.5vw;
+        }
+
+        .P2 {
+            font-size: 14.5vw;
+        }
+
+        .E2 {
+            font-size: 14.5vw;
+        }
+
+        .R2 {
+            font-size: 14.5vw;
+        }
+        
         .contentInformationWhoIAm {
             font-size: 5.35vw;
             width: 90%;
@@ -269,6 +502,12 @@
 
     /*Standard laptop's/screen's. Since 1025px to 1440px*/
     @media (min-width: 1025px) and (max-width: 1440px) {
+        .fullstackDeveloperDiv {
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+        }
+        
         .contentInformationWhoIAm {
             font-size: 2.85vw;
             width: 90%;
