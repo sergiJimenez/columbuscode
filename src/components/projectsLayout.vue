@@ -69,6 +69,27 @@
         color: #FFFFFF;
         margin-top: 3%;
         margin-bottom: auto;
+        animation: scrollTextStart 8s infinite linear, scrollTextEnd 8s infinite linear;
+    }
+
+    
+    
+    @keyframes scrollTextStart {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes scrollTextEnd {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
 
     .P {

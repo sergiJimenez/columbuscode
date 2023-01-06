@@ -1,6 +1,6 @@
 <template>
     <div class="whoAmILayout">
-        <div class="fullstackDeveloperDiv">
+        <!-- <div class="fullstackDeveloperDiv">
             <div class="fullstackDiv" alt="Fullstack">
                 <div class="F1">F</div>
                 <div class="U1">U</div>
@@ -13,6 +13,28 @@
                 <div class="K1">K</div>
             </div>
             <div class="developerDiv" alt="Developer">
+                <div class="D2">D</div>
+                <div class="E2-0">E</div>
+                <div class="V2">V</div>
+                <div class="E2-1">E</div>
+                <div class="L2">L</div>
+                <div class="O2">O</div>
+                <div class="P2">P</div>
+                <div class="E2">E</div>
+                <div class="R2">R</div>
+            </div>
+        </div> -->
+        <div class="fullstackDeveloperDiv">
+            <div class="fullstackDiv" alt="Fullstack">
+                <div class="F1">F</div>
+                <div class="U1">U</div>
+                <div class="L1">L</div>
+                <div class="L1-1">L</div>
+                <div class="S1">S</div>
+                <div class="T1">T</div>
+                <div class="A1">A</div>
+                <div class="C1">C</div>
+                <div class="K1">K</div>
                 <div class="D2">D</div>
                 <div class="E2-0">E</div>
                 <div class="V2">V</div>
@@ -73,6 +95,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        animation: scrollTextStart 8s infinite linear, scrollTextEnd 8s infinite linear;
     }
 
     .fullstackDiv {
@@ -81,6 +104,24 @@
         align-items: center;
         width: 100%;
         color: #ff0000;
+    }
+    
+    @keyframes scrollTextStart {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes scrollTextEnd {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
 
     .F1 {
