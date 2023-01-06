@@ -9,10 +9,6 @@
         </div>
         <div class="divAnimation">
             <p class="scrollDown" ref="scrollDownText" alt="Scroll down">Scroll down</p>
-            <!-- <div class="lineCircleDiv" ref="animationLineCircle">
-                <div class="verticalLine" alt="Vertical line"></div>
-                <div class="circle" alt="Circle"></div>
-            </div> -->
         </div>
     </div>
 </template>
@@ -23,24 +19,11 @@
 <style scoped>
     /*Font families*/
     @font-face {
-        font-family: 'Adamas';
-        src: local('Adamas'), url('../fonts/Adamas-Regular.otf') format('opentype');
-        font-style: normal;
-        font-weight: normal;
-    }
-
-    @font-face {
         font-family: 'SF-Pro-Ultralight';
         src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
-    }
-
-    @font-face {
-        font-family: 'SF-Pro-UltralightItalic';
-        src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
-        font-style: normal;
-        font-weight: normal;
+        font-display: swap;
     }
 
     /*Main conditions to the maximum resolution*/
@@ -78,6 +61,7 @@
         transition: clip-path 1000ms ease;
         transition: 650ms; /* Resize */
         margin-top: 2.56%;
+        cursor: default;
     }
 
     .contactMe:hover::before {

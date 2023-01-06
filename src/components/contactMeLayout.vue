@@ -75,6 +75,7 @@
         src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
+        font-display: swap;
     }
     
     /*Main conditions to the maximum resolution*/

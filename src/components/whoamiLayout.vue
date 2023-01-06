@@ -64,6 +64,7 @@
         src: local('Adamas'), url('../fonts/Adamas-Regular.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
+        font-display: swap;
     }
 
     @font-face {
@@ -71,13 +72,7 @@
         src: local('SF-Pro-Ultralight'), url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
         font-style: normal;
         font-weight: normal;
-    }
-
-    @font-face {
-        font-family: 'SF-Pro-UltralightItalic';
-        src: local('SF-Pro-UltralightItalic'), url('../fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
-        font-style: normal;
-        font-weight: normal;
+        font-display: swap;
     }
 
     /*Main conditions to the maximum resolution*/
