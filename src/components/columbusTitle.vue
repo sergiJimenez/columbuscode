@@ -34,7 +34,8 @@
         height: 100vh;
         background-color: #111111;
         animation: fadeIn 2s;
-    }
+        animation-delay: 3s;
+    }  
 
     @keyframes fadeIn {
         from {
